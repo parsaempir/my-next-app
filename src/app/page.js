@@ -1,103 +1,139 @@
-import Image from "next/image";
-
+import VideoReveal from "./VideoReveal";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+<>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+<nav>
+<div className="head-nav">
+
+  <span>
+<img src="/logo.svg" />
+   </span>
+   <span className="head-nav-center">
+<span>Mailer <img src="Expand_right_light.svg"/></span>
+<span>Product box <img src="Expand_right_light.svg"/></span>
+<span>Rigged Box <img src="Expand_right_light.svg"/></span>
+   </span>
+
+   <span className="head-nav-end">
+    <img src="/Basket_alt_3_fill.svg"/>
+    <button>Account <img src="Expand_right_light (1).svg"/></button>
+   </span>
+</div>
+
+</nav>
+<div className="Hero-Section">
+<img src="/1.svg" alt="Box 1" className="box box1"/>
+        <img src="/2.svg" alt="Box 2" className="box box2"/>
+        <img src="/3.svg" alt="Box 3" className="box box3"/>
+        <img src="/4.svg" alt="Box 4" className="box box4"/>
+
+<div className="header-text">
+<h1>Rush Box <br/>The name is (mostly) literal.</h1>
+<h4>Select a packaging style, quantity, and choose from custom or stock sizes – then start <br/>designing your custom boxes. Add customization options like images, text, and any 
+<br/>color your brand requires. As you design you'll see an instant quote so you know exactly <br/>what your final order will come to.
+</h4>
+<span><button>ORDER</button></span>
+</div>
+
+
+</div>
+
+
+       <div className="section-one">
+<div className="head-section-one">
+
+{/*
+   <div className="gallery">
+  
+    <span className="row-one"> <img src="Credit.png" alt="Cardboard Box" className="Credit"/>
+    
+    <img src="COMPANIES.png" className="companies" alt="Shipper Box"/>
+    </span>
+
+<div>
+        <span className="row-two"> <img src="Design your box.png" alt="Mailer Box"  className="Mailer"/>
+
+          <img src="Custom Box.png" alt="Custom Box" className="Custom"/></span>
+        
+   
+      
+       
+        <span> <img src="AI bank.png" alt="Folded Box" className="Folded"/>
+  
+      <img src="EASY PAY.png" alt="Corrugated Box" className="Corrugated"/></span>
+       
+    
+    
+<span > <img src="Paymaent.png" alt="Gift Box" className="Gift"/>
+       <img src="invested.png" alt="Setup Box" className="Setup"/></span>
+      
+       </div>
+         
+            </div> */}
+  
+
+  <div className="gallery">
+    <div className="box">
+      <img src="Credit.png" alt="Cardboard Box"/>
+      <div className="box-label">Cardboard <span>Box</span></div>
     </div>
+
+    <div className="box">
+      <img src="Design your box.png" alt="Mailer Box"/>
+      <div className="box-label-one">Mailer <span>Box</span></div>
+    </div>
+
+    <div className="box">
+      <img src="Custom Box.png" alt="Custom Box"/>
+      <div className="box-label-three">Custom <span>Box</span></div>
+    </div>
+
+    <div className="box">
+      <img src="COMPANIES.png" alt="Shipper Box"/>
+      <div className="box-label">Shipper <span>Box</span></div>
+    </div>
+
+    <div className="box">
+      <img src="AI bank.png" alt="Folded Box"/>
+      <div className="box-label-two">Folded <span>Box</span></div>
+    </div>
+
+    <div className="box">
+      <img src="EASY PAY.png" alt="Corrugated Box"/>
+      <div className="box-label-four">Corrugated <span>Box</span></div>
+    </div>
+
+    <div className="box">
+      <img src="Paymaent.png" alt="Gift Box"/>
+      <div className="box-label">Gift <span>Box</span></div>
+    </div>
+
+    <div className="box">
+      <img src="invested.png" alt="Setup Box"/>
+      <div className="box-label">Setup <span>Box</span></div>
+    </div>
+  </div>
+
+ 
+</div>
+
+       </div>
+     
+
+     <div className="section-two">
+<div className="head-section-two">
+
+<main>
+      <VideoReveal />
+      {}
+
+    </main>
+    
+      
+
+</div>
+     </div>
+</>
   );
 }
