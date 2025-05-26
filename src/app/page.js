@@ -136,6 +136,19 @@ export default function Home() {
      </div>
 
 
+     <div className="section-three">
+<div className="head-section-three">
+
+<h1>
+
+  How It Works
+</h1>
+
+
+
+</div>
+
+     </div>
 </>
   );
 }
