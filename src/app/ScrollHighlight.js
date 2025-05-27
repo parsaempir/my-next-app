@@ -73,7 +73,8 @@ export default function ScrollHighlight() {
       style={{
         minHeight: "200vh", 
         padding: "2rem",
-        textAlign: "center"
+        textAlign: "center",
+        zIndex: '999'
       }}
     >
       <div
