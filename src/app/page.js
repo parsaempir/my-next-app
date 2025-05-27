@@ -157,6 +157,13 @@ export default function Home() {
  
       </div>
      </div>
+     <div className="image">
+    <img src="/What we do Section.png" height="491" width="1728" className="img"/>
+    <div className="order-con">
+      <button className="order">ORDER</button>
+    </div>
+  </div>
+
 </>
   );
 }
