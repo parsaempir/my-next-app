@@ -267,7 +267,7 @@ bottom: 10%;
   
   .slider-item {
     flex-shrink: 0;
-    width: 50%;
+    width: 60%;
     height: 500px;
     background: #111111;
     border-radius: 50px;
@@ -283,7 +283,7 @@ bottom: 10%;
   
   .slider-item1 {
     flex-shrink: 0;
-    width: 50%;
+    width: 60%;
     height: 500px;
     background: #111111;
     border-radius: 50px;

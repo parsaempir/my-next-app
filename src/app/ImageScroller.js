@@ -12,7 +12,7 @@ export default function ProductSlider() {
   const trackRef = useRef(null);
 
   useEffect(() => {
-    const total = 8.6; 
+    const total = 9.3; 
 
     gsap.to(trackRef.current, {
       xPercent: -100 * (total - 1),
