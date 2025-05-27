@@ -528,7 +528,15 @@ font-size: 80px;
 left: -10%;
 position: absolute;
 }
+@media (max-width: 1500px) {
+  .slider-item1{
+    width: 100%;
 
+  }
+  .slider-item{
+    width: 100%;
+  }
+}
 
 
 .image {
