@@ -1,5 +1,7 @@
 import VideoReveal from "./VideoReveal";
+import HowItWorks from "./ScrollHighlight";
 export default function Home() {
+  
   return (
 <>
 
@@ -139,13 +141,7 @@ export default function Home() {
      <div className="section-three">
 <div className="head-section-three">
 
-<h1>
-
-  How It Works
-</h1>
-
-
-
+<HowItWorks/>
 </div>
 
      </div>

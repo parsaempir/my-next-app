@@ -37,7 +37,7 @@ export default function VideoReveal() {
       
    
 
-      {}
+      {/* بخش ویدیو که اسکرول‌زون انیمیشنیه */}
       <section
         ref={wrapperRef}
         style={{
