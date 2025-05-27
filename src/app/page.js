@@ -1,6 +1,7 @@
 import VideoReveal from "./VideoReveal";
 import HowItWorks from "./ScrollHighlight";
 import ImageScroller from "./ImageScroller";
+import Footer from './Footer'
 export default function Home() {
   
   return (
@@ -158,12 +159,12 @@ export default function Home() {
       </div>
      </div>
      <div className="image">
-    <img src="/What we do Section.png" height="491" width="1728" className="img"/>
+    <img src="/What we do Section.png" className="img"/>
     <div className="order-con">
       <button className="order">ORDER</button>
     </div>
   </div>
-
+<Footer/>
 </>
   );
 }
