@@ -1,5 +1,6 @@
 import VideoReveal from "./VideoReveal";
 import HowItWorks from "./ScrollHighlight";
+import ImageScroller from "./ImageScroller";
 export default function Home() {
   
   return (
@@ -128,22 +129,33 @@ export default function Home() {
 
 <main>
       <VideoReveal />
-      {}
-
     </main>
     
-      
-
+    
 </div>
      </div>
-
-
      <div className="section-three">
 <div className="head-section-three">
 
 <HowItWorks/>
 </div>
 
+     </div>
+
+     <div className="section-four">
+      <div className="head-section-four">
+
+    
+
+  
+
+
+      <ImageScroller />
+
+
+   
+ 
+      </div>
      </div>
 </>
   );
