@@ -12,7 +12,7 @@ export default function ProductSlider() {
   const trackRef = useRef(null);
 
   useEffect(() => {
-    const total = 9.3; 
+    const total = 10; 
 
     gsap.to(trackRef.current, {
       xPercent: -100 * (total - 1),
@@ -29,7 +29,7 @@ export default function ProductSlider() {
     const items = trackRef.current.querySelectorAll('.slider-item, .slider-item1');
 
     items.forEach(item => {
-      const photos = item.querySelectorAll('img');
+      const photos = item.querySelectorAll('img#hovre-box');
 
       item.addEventListener('mousemove', (e) => {
         const rect = item.getBoundingClientRect();
@@ -76,8 +76,8 @@ export default function ProductSlider() {
                 <h3>Mailer <span>Box</span></h3>
                 <p>Sturdy, Self-Locking Packaging.</p>
                 <div className='photo-slider'>
-                  <img className='photo-one' src='/10569485 3.png' />
-                  <img className='photo-two' src='10569485 4.png' />
+                  <img className='photo-one' src='/10569485 3.png' id='hovre-box'/>
+                  <img className='photo-two' src='10569485 4.png'  id='hovre-box'/>
                   <img className='photo-three' src='m021t006_paper_food_box_mockup_02 4.png' />
                 </div>
               </div>
@@ -87,8 +87,8 @@ export default function ProductSlider() {
               <div className='in-slider'>
                 <h3>Shipper <span>Box</span></h3>
                 <div className='photo-slider'>
-                  <img className='photo-four' src='/4.png' />
-                  <img className='photo-five' src='/3.png' />
+                  <img className='photo-four'  id='hovre-box' src='/4.png' />
+                  <img className='photo-five' id='hovre-box' src='/3.png' />
                   <img className='photo-six' src='/5.png' />
                 </div>
               </div>
@@ -98,8 +98,8 @@ export default function ProductSlider() {
               <div className='in-slider'>
                 <h3>FOLDED <span>Box</span></h3>
                 <div className='photo-slider'>
-                  <img className='photo-seven' src='/1.png' />
-                  <img className='photo-eight' src='/6.png' />
+                  <img className='photo-seven' id='hovre-box' src='/1.png' />
+                  <img className='photo-eight' id='hovre-box' src='/6.png' />
                   <img className='photo-nine' src='/2.png' />
                 </div>
               </div>
@@ -109,8 +109,8 @@ export default function ProductSlider() {
               <div className='in-slider'>
                 <h3>Courogated<br /> <span>Box</span></h3>
                 <div className='photo-slider'>
-                  <img className='photo-ten' src='/8.png' />
-                  <img className='photo-eleven' src='/9.png' />
+                  <img className='photo-ten' id='hovre-box' src='/8.png' />
+                  <img className='photo-eleven' id='hovre-box' src='/9.png' />
                   <img className='photo-twelve' src='/7.png' />
                 </div>
               </div>
@@ -120,8 +120,8 @@ export default function ProductSlider() {
               <div className='in-slider'>
                 <h3>Cardboard  <span>Box</span></h3>
                 <div className='photo-slider'>
-                  <img className='photo-thirteen' src='/11.png' />
-                  <img className='photo-fourteen' src='/12.png' />
+                  <img className='photo-thirteen' id='hovre-box' src='/11.png' />
+                  <img className='photo-fourteen' id='hovre-box' src='/12.png' />
                   <img className='photo-fifteen' src='/10.png' />
                 </div>
               </div>
@@ -131,8 +131,8 @@ export default function ProductSlider() {
               <div className='in-slider'>
                 <h3>Gift  <span>Box</span></h3>
                 <div className='photo-slider'>
-                  <img className='photo-sixteen' src='/19.png' />
-                  <img className='photo-seventeen' src='/21.png' />
+                  <img className='photo-sixteen' id='hovre-box' src='/19.png' />
+                  <img className='photo-seventeen' id='hovre-box' src='/21.png' />
                   <img className='photo-eighteen' src='/13.png' />
                 </div>
               </div>
@@ -142,8 +142,8 @@ export default function ProductSlider() {
               <div className='in-slider'>
                 <h3>Custom <span>Box</span></h3>
                 <div className='photo-slider'>
-                  <img className='photo-nineteen' src='/15.png' />
-                  <img className='photo-twenty' src='/16.png' />
+                  <img className='photo-nineteen' id='hovre-box' src='/15.png' />
+                  <img className='photo-twenty' id='hovre-box' src='/16.png' />
                   <img className='photo-twentyone' src='/17.png' />
                 </div>
               </div>
@@ -153,8 +153,8 @@ export default function ProductSlider() {
               <div className='in-slider'>
                 <h3>Setup <span>Box</span></h3>
                 <div className='photo-slider'>
-                  <img className='photo-sixteen' src='/19.png' />
-                  <img className='photo-twentytwo' src='/18.png' />
+                  <img className='photo-twentyfour' id='hovre-box' src='/19.png' />
+                  <img className='photo-twentytwo' id='hovre-box' src='/18.png' />
                   <img className='photo-twentythree' src='/20.png' />
                 </div>
               </div>
