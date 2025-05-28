@@ -6,20 +6,26 @@ return(<>
 
 
 <div className="footer">
-    <span className="text-left">Rush box</span>
+    <div className="text-left">Rush box</div>
 <div className="text-right">
 
-   <div><span>Mailer</span><br/>
-Mailer Box<br/>
-Shipper Box<br/>
-Folded Box<br/></div>
-   <div> <span>Rigged Box</span><br/>
-Gift Box<br/>
-setup Box<br/>
-Custom Box</div>
-   <div> <span>Product Box</span><br/>
-Cardstock Box<br/>
-Corrugated Box</div>
+   <div><a id="head-link">Mailer</a><br/>
+<a>MailerBox</a> <br/>
+<a>Shipper Box</a>
+<br/>
+<a>Folded Box</a><br/></div>
+   <div> <a id="head-link">Rigged Box</a><br/>
+   <a>Gift Box</a>
+<br/>
+<a>setup Box</a><br/>
+<a>Custom Box</a>
+
+</div>
+   <div><a id="head-link">Product Box</a><br/>
+   <a>Cardstock Box</a><br/>
+   <a>Corrugated Box</a>
+
+</div>
 </div>
   </div>
 
