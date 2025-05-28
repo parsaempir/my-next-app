@@ -48,6 +48,9 @@ gap: 10px;
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 500px;
 }
 .header-text h1{
     font-size: 50px;
@@ -71,33 +74,55 @@ color: white;
     width: 100%;
     max-width: 1600px;
     margin: auto;
+    position: relative;
 }
 .header-text{
     padding-top: 250px;
 }
 
-
-
-
-.box {
-
+.head-box-img{
+  position: relative;
+  height:1000px;
 }
 
-.box1 {
 
+
+.hero-box1{
+  width: 600px;
+  height: auto;
+  position: absolute;
+  top: -250px;
+
+  transform: rotate(-15deg);
 }
 
-.box2 {
-  
+.hero-box2{
+  width: 700px;
+  height: auto;
+  position: absolute;
+top: -200px;
+  right: -1px;
+  transform: rotate(10deg);
 }
 
-.box3 {
-
+.hero-box3{
+  width: 650px;
+  height: auto;
+  position: absolute;
+top: 370px;
+  left: 10%;
+  transform: rotate(5deg);
 }
 
-.box4 {
-  
+.hero-box4 {
+  width: 800px;
+  height: auto;
+  position: absolute;
+top: 100px;
+  right: -100px;
+  transform: rotate(-5deg);
 }
+
 
 .section-one{
     background-color: #111111;

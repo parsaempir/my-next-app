@@ -27,10 +27,11 @@ export default function Home() {
 
 </nav>
 <div className="Hero-Section">
-<img src="/1.svg" alt="Box 1" className="box box1"/>
-        <img src="/2.svg" alt="Box 2" className="box box2"/>
-        <img src="/3.svg" alt="Box 3" className="box box3"/>
-        <img src="/4.svg" alt="Box 4" className="box box4"/>
+  <div className="head-box-img"><img src="/Screenshot 2025-03-25 at 4.44.07 PM 1 2.png" alt="Box1" className="hero-box1"/>
+        <img src="/Screenshot 2025-03-25 at 4.43.58 PM 1 2.png" alt="Box 2" className="hero-box2"/>
+        <img src="/Screenshot 2025-03-25 at 4.44.21 PM 1 2.png" alt="Box 3" className="hero-box3"/>
+        <img src="/Screenshot 2025-03-25 at 4.44.15 PM 1 2.png" alt="Box 4" className="hero-box4"/></div>
+
 
 <div className="header-text">
 <h1>Rush Box <br/>The name is (mostly) literal.</h1>
