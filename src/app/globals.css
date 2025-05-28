@@ -614,6 +614,9 @@ position: absolute;
   font-size: 14px;
   color: #111111;
   line-height: 1.5;
+
+}
+.text-right a{
   cursor: pointer;
 }
 #head-link{
