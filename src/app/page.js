@@ -184,6 +184,7 @@ background-color: #111111;
 color: white;
     font-family: 'Secular One',sans-serif;
     font-weight:400;
+    border:none;
 }
  
 .Hero-Section{
