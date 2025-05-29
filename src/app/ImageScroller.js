@@ -204,8 +204,8 @@ export default function ProductSlider() {
   
   .slider-item {
     flex-shrink: 0;
-    width: 1000px;
-    height: 600px;
+    width: 850px;
+    height: 550px;
     background: #111111;
     border-radius: 50px;
     padding: 10px;
@@ -262,6 +262,7 @@ font-weight: 200;
     object-fit: cover;
     top: 100px;
 left: -130px; 
+    display:none;
 transform: rotate(5deg); }
   .photo-two{
     position: absolute;
@@ -270,6 +271,7 @@ transform: rotate(5deg); }
     top: 200px;
     left: 40px; 
     transform: rotate(5deg);
+    display:none;
   }
   .photo-three{
     position: absolute;
@@ -277,11 +279,13 @@ transform: rotate(5deg); }
     height: auto;
 top: -420px;
 left: -250px; 
+    display:none;
 transform: rotate(10deg); }
 .photo-four{
   position: absolute;
   width: 370px;
   height: auto;
+    
   object-fit: cover;
   top: 135px;
 left: -130px; 
