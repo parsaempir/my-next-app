@@ -296,12 +296,13 @@ function Header() {
                 }
 
                 .image-text {
-                    font-size: 1.1em;
+                    font-size: 25px;
                     color: #333;
                     margin-bottom: 10px;
                     text-align: center;
-                    font-weight: 500;
+                    font-weight: 400;
                     white-space: nowrap; 
+                    font-family: 'Raleway', sans-serif; 
                     flex-shrink: 0;
                 }
 

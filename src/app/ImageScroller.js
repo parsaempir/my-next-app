@@ -192,7 +192,7 @@ export default function ProductSlider() {
     border-radius: 24px;
     overflow: hidden;
     padding: 300px 0px 300px 400px ;
- margin-top: 200px;
+ margin-top: 250px;
  
   }
   
