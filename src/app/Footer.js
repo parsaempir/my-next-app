@@ -98,7 +98,7 @@ export default function Footer() {
 
                 .link-column a {
                     text-decoration: none; /* حذف زیرخط پیش‌فرض لینک */
-                    cursor: pointer;
+                    cursor: pointer; 
                 
                     
                         color: #111111; /* مثال: تغییر رنگ هنگام هاور */

@@ -1,48 +1,49 @@
-"use client";
-import { useState, useRef } from "react"; // useRef را اضافه کنید
+'use client';
+import { useState, useRef } from "react";
 import './globals.css';
 
 function Header() {
     let [divShow, setDivShow] = useState(false);
     let [divShowOne, setDivShowOne] = useState(false);
     let [divShowTwo, setDivShowTwo] = useState(false);
-    const [hoveredIndex, setHoveredIndex] = useState(null);
 
-    // برای مدیریت تایم‌اوت‌ها از useRef استفاده می‌کنیم
+    const [hoveredIndexMailer, setHoveredIndexMailer] = useState(null);
+    const [hoveredIndexProduct, setHoveredIndexProduct] = useState(null);
+    const [hoveredIndexRigged, setHoveredIndexRigged] = useState(null);
+
+
     const timeoutRef = useRef(null);
     const timeoutRefOne = useRef(null);
     const timeoutRefTwo = useRef(null);
 
-    const images = [
-        "/Mailer Box.png",
-        "/Shipper Box.png",
-        "/Foldwd Box.png"
+    const mailerImages = [
+        { src: "/Mailer Box.png", text: "Mailer Box", itemWidth: "500px", itemHeight: "auto" },
+        { src: "/Shipper Box.png", text: "Shipper Box", itemWidth: "500px", itemHeight: "auto" },
+        { src: "/Foldwd Box.png", text: "Folded Box", itemWidth: "500px", itemHeight: "auto" }
     ];
-    const imagesOne = [
-        "/7.png",
-        "/10.png"
+    const productImages = [
+        { src: "/10.png", text: "Cardboard Box", itemWidth: "600px", itemHeight: "auto" },
+        { src: "/7.png", text: "Corrugated Box", itemWidth: "500px", itemHeight: "auto" }
     ];
-    const imagesTwo = [
-        "/13.png",
-        "/20.png",
-        "/17.png"
+    const riggedImages = [
+        { src: "/13.png", text: "Gift Box", itemWidth: "500px", itemHeight: "auto" },
+        { src: "/20.png", text: "Setup Box", itemWidth: "500px", itemHeight: "auto" },
+        { src: "/17.png", text: "Custom Box", itemWidth: "450px", itemHeight: "auto" }
     ];
+
     const isAnyHovered = divShow || divShowOne || divShowTwo;
 
-    // توابع جدید برای مدیریت hover
     const handleMouseEnter = (setFn, ref) => {
-        // اگر تایم‌اوت فعال بود، آن را کنسل کن
         if (ref.current) {
             clearTimeout(ref.current);
         }
-        setFn(true); // دراپ‌دان را باز کن
+        setFn(true);
     };
 
     const handleMouseLeave = (setFn, ref) => {
-        // یک تایم‌اوت کوتاه تنظیم کن تا فرصت رفتن روی دراپ‌دان را داشته باشی
         ref.current = setTimeout(() => {
-            setFn(false); // دراپ‌دان را ببند
-        }, 100); // 100 میلی‌ثانیه تأخیر
+            setFn(false);
+        }, 100);
     };
 
     return (
@@ -68,16 +69,21 @@ function Header() {
                             onMouseLeave={() => handleMouseLeave(setDivShow, timeoutRef)}
                         >
                             <div className="image-container">
-                   
-                                {images.map((src, index) => (
-                                    <img
-                                        key={index}
-                                        src={src}
-                                        alt={`img-${index}`}
-                                        onMouseEnter={() => setHoveredIndex(index)}
-                                        onMouseLeave={() => setHoveredIndex(null)}
-                                        className={`image-item ${hoveredIndex !== null && hoveredIndex !== index ? 'blurred' : ''}`}
-                                    />
+                                {mailerImages.map((item, index) => (
+                                    <div
+                                        key={item.src}
+                                        className={`image-item-wrapper ${hoveredIndexMailer !== null && hoveredIndexMailer !== index ? 'blurred' : ''}`}
+                                        onMouseEnter={() => setHoveredIndexMailer(index)}
+                                        onMouseLeave={() => setHoveredIndexMailer(null)}
+                                    >
+                                        <p className="image-text">{item.text}</p>
+                                        <img
+                                            src={item.src}
+                                            alt={item.text}
+                                            className="image-item"
+                                            style={{ width: item.itemWidth, height: item.itemHeight }}
+                                        />
+                                    </div>
                                 ))}
                             </div>
                         </div>
@@ -86,20 +92,27 @@ function Header() {
                             onMouseEnter={() => handleMouseEnter(setDivShowOne, timeoutRefOne)}
                             onMouseLeave={() => handleMouseLeave(setDivShowOne, timeoutRefOne)}
                         >Product box <img src="Expand_right_light.svg" className={divShowOne ? 'rotated' : ''} alt="Expand Icon" /></span>
-                        <div className={`hover-box-showone ${divShowOne ? "showone" : ""}`}
+                        <div
+                            className={`hover-box-showone ${divShowOne ? "showone" : ""}`}
                             onMouseEnter={() => handleMouseEnter(setDivShowOne, timeoutRefOne)}
                             onMouseLeave={() => handleMouseLeave(setDivShowOne, timeoutRefOne)}
                         >
                             <div className="image-container">
-                                {imagesOne.map((src, index) => (
-                                    <img
-                                        key={index}
-                                        src={src}
-                                        alt={`img-${index}`}
-                                        onMouseEnter={() => setHoveredIndex(index)}
-                                        onMouseLeave={() => setHoveredIndex(null)}
-                                        className={`image-item ${hoveredIndex !== null && hoveredIndex !== index ? 'blurred' : ''}`}
-                                    />
+                                {productImages.map((item, index) => (
+                                    <div
+                                        key={item.src}
+                                        className={`image-item-wrapper ${hoveredIndexProduct !== null && hoveredIndexProduct !== index ? 'blurred' : ''}`}
+                                        onMouseEnter={() => setHoveredIndexProduct(index)}
+                                        onMouseLeave={() => setHoveredIndexProduct(null)}
+                                    >
+                                        <p className="image-text">{item.text}</p>
+                                        <img
+                                            src={item.src}
+                                            alt={item.text}
+                                            className="image-item"
+                                            style={{ width: item.itemWidth, height: item.itemHeight }}
+                                        />
+                                    </div>
                                 ))}
                             </div>
                         </div>
@@ -115,15 +128,21 @@ function Header() {
                         onMouseLeave={() => handleMouseLeave(setDivShowTwo, timeoutRefTwo)}
                     >
                         <div className="image-container">
-                            {imagesTwo.map((src, index) => (
-                                <img
-                                    key={index}
-                                    src={src}
-                                    alt={`img-${index}`}
-                                    onMouseEnter={() => setHoveredIndex(index)}
-                                    onMouseLeave={() => setHoveredIndex(null)}
-                                    className={`image-item ${hoveredIndex !== null && hoveredIndex !== index ? 'blurred' : ''}`}
-                                />
+                            {riggedImages.map((item, index) => (
+                                <div
+                                    key={item.src}
+                                    className={`image-item-wrapper ${hoveredIndexRigged !== null && hoveredIndexRigged !== index ? 'blurred' : ''}`}
+                                    onMouseEnter={() => setHoveredIndexRigged(index)}
+                                    onMouseLeave={() => setHoveredIndexRigged(null)}
+                                >
+                                    <p className="image-text">{item.text}</p>
+                                    <img
+                                        src={item.src}
+                                        alt={item.text}
+                                        className="image-item"
+                                        style={{ width: item.itemWidth, height: item.itemHeight }}
+                                    />
+                                </div>
                             ))}
                         </div>
                     </div>
@@ -181,12 +200,17 @@ function Header() {
                 .hover-box-showtwo {
                     position: absolute;
                     top: 50px;
-                    right: 0%;    
+                    left: 0;
                     background-color: white;    
                     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
                     width: 100%;
                     z-index: 999;
                     display: none; 
+                    height: 500px;
+                    box-sizing: border-box; 
+                    padding-top: 40px;
+                    padding-bottom: 20px;
+                    overflow: hidden; 
                 }
 
                 .hover-box-showone {
@@ -197,46 +221,94 @@ function Header() {
                 }
 
                 .show, .showone, .showtwo { 
-                    display: block; 
+                    display: flex; 
+                    justify-content: center; 
+                    align-items: flex-start; 
                 }
                 
-                /* کلاس جدید برای چرخش */
                 .head-nav-center span img {
                     transition: transform 0.3s ease;
                 }
                 .head-nav-center span img.rotated {
-                    transform: rotate(87deg);
+                    transform: rotate(90deg);
                 }
 
                 .overlay-backdrop {
                     position: fixed;
-                    top: 70px; /* از 44px (ارتفاع nav) + مقداری فاصله برای اطمینان شروع شود */
+                    top: 70px;
                     left: 0;
                     width: 100%;
                     height: 100%;
                     background-color: rgba(0, 0, 0, 0.5); 
-                    z-index: 98; /* باید کمتر از دراپ‌دان‌ها باشد */
+                    z-index: 98;
                 }
                 .image-container {
                     display: flex;
-               
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 40px;
-                    padding-bottom: 20px; /* اضافه شده برای فاصله از پایین */
+                    gap: 20px; 
+                    justify-content: center; 
+                    align-items: flex-start; 
+                    margin-left: auto; 
+                    margin-right: auto; */
+                    overflow-x: auto; 
+                    flex-wrap: nowrap; 
+                    height: 100%; 
+                    padding: 0 20px; 
+
+                  
+                    /* برای 3 آیتم 500px: (500*3) + (2*20) = 1500 + 40 = 1540px */
+                    /* برای 2 آیتم 600px: (600*2) + (1*20) = 1200 + 20 = 1220px */
+                    /* برای 3 آیتم 500px: (500*3) + (2*20) = 1500 + 40 = 1540px */
+                    min-width: calc(100% - 40px); 
+
+              
+              
+                .hover-box-show .image-container {
+                    width: 1540px; 
+                }
+                .hover-box-showone .image-container {
+                    width: 1220px; 
+                }
+                .hover-box-showtwo .image-container {
+                    width: 1540px; 
+                }
+
+                .image-item-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center; 
+                    cursor: pointer;
+                    transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease; 
+                    flex-shrink: 0; 
+                    box-sizing: border-box; 
+                    justify-content: flex-start;
+                    /* height: 350px; 
+                }
+                
+                .image-item-wrapper:hover {
+                    transform: translateY(-5px);
+                }
+
+                .image-item-wrapper.blurred {
+              
+                    opacity: 0.3;
+                }
+
+                .image-text {
+                    font-size: 1.1em;
+                    color: #333;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    font-weight: 500;
+                    white-space: nowrap; 
+                    flex-shrink: 0;
                 }
 
                 .image-item {
-                    width: 600px; /* ممکن است این مقدار برای همه تصاویر خیلی زیاد باشد */
-                    height: auto;
-                    transition: filter 0.3s ease, transform 0.3s ease;
-                    cursor: pointer;
-                }
-
-                .image-item.blurred {
-                    filter: blur(1px) brightness(0.5);
-                    transform: scale(0.95);
-                    opacity: 0.6;
+                    display: block; 
+                    margin-left: auto; 
+                    margin-right: auto; 
+                    object-fit: contain; 
+                   
                 }
             `}</style>
         </>

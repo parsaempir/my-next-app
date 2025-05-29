@@ -73,7 +73,7 @@ export default function ProductSlider() {
 
             <div className="slider-item">
               <div className='in-slider'>
-                <h3>Mailer <span>Box</span></h3>
+                <h3> MAILER <span>Box</span></h3>
                 <p>Sturdy, Self-Locking Packaging.</p>
                 <div className='photo-slider'>
                   <img className='photo-one' src='/10569485 3.png' id='hovre-box'/>
