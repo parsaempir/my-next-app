@@ -50,6 +50,7 @@ export default function Footer() {
                     padding-top: 100px; 
                     padding-bottom: 50px;
                     background-color: white; 
+           
                 }
 
                 .text-left {
@@ -68,6 +69,7 @@ export default function Footer() {
                     gap: 60px; 
                     align-items: flex-start; 
                          padding-right: 80px;
+       
                 }
 
                 .link-column {
@@ -82,6 +84,8 @@ export default function Footer() {
                     font-weight: bold; 
                     margin-bottom: 30px; 
                     display: block; 
+                               font-family: 'Raleway', sans-serif;
+               font-weight: 400;
                 }
 
                 .link-column ul {
@@ -95,6 +99,7 @@ export default function Footer() {
                     color: #111111; 
                     line-height: 1.5; 
                     margin-bottom: 5px; 
+                               font-family: 'Raleway', sans-serif;
                 }
 
                 .link-column a {

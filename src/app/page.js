@@ -159,17 +159,22 @@ export default function Home() {
     text-align: center;
     justify-content: center;
     position: absolute;
-    top: 0;
-    left: 500px;
+    top: 30px;
+    left: 450px;
 }
 .header-text h1{
     font-size: 50px;
     margin-bottom: 0;
+    font-family: 'Secular One',sans-serif;
+    font-weight:400;
 }
 .header-text h4{
     font-size: 16px;
    margin-bottom: 65px;
    color: #CFCFCF;
+     font-weight:500;
+     font-family: 'Raleway', sans-serif; 
+     line-height: 1.5;
 }
 .header-text span button{
 width: 233px;
@@ -177,6 +182,8 @@ height: 44px;
 border-radius: 100px;
 background-color: #111111;
 color: white;
+    font-family: 'Secular One',sans-serif;
+    font-weight:400;
 }
  
 .Hero-Section{
@@ -299,18 +306,35 @@ top: 30px;
     left: 5.5%;
     color: white;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
+        font-family: 'Secular One',sans-serif;
     text-transform: uppercase;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   }
-
+.box-label span{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
+  .box-label-two span{
+    font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  }
+  .box-label-three span{
+    font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  }
+.box-label-four span {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
   .box-label-one {
     position: absolute;
 top: 45%;
     left: 35%;
     color: white;
     font-size: 18px;
-    font-weight: bold;
+   font-weight: 400;
+        font-family: 'Secular One',sans-serif;
     text-transform: uppercase;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   }
@@ -320,7 +344,8 @@ top: 50%;
     left: 39%;
     color: white;
     font-size: 18px;
-    font-weight: bold;
+   font-weight: 400;
+        font-family: 'Secular One',sans-serif;
     text-transform: uppercase;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   }
@@ -330,7 +355,8 @@ bottom: 5%;
     left: 10%;
     color: white;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
+        font-family: 'Secular One',sans-serif;
     text-transform: uppercase;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   }
@@ -340,7 +366,8 @@ bottom: 10%;
     left: 5%;
     color: white;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
+        font-family: 'Secular One',sans-serif;
     text-transform: uppercase;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   }
@@ -404,7 +431,7 @@ bottom: 10%;
   padding: 12px 160px;
   border: none;
   border-radius: 50px;
-  font-family: system-ui;
+   font-family: 'Raleway', sans-serif;
   cursor: pointer;
   z-index: 1;
   pointer-events: auto;

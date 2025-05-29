@@ -158,6 +158,9 @@ function Header() {
                 nav {
                     width: 100%;
                     height: 44px;
+                position: sticky;
+                top:0;
+                z-index: 9999;
                 }
                 .head-nav {
                     width: 100%;
@@ -171,6 +174,8 @@ function Header() {
                     display: flex;
                     align-items: center;
                     gap: 80px;
+                      font-family: 'Secular One',sans-serif;
+                      font-weight:400;
                 }
                 .head-nav-center span {
                     font-size: 18px;
@@ -193,8 +198,11 @@ function Header() {
                     background-color: #111111;
                     color: white;
                     display: flex;
+                    border:none;
                     align-items: center;
                     gap: 10px;
+                     font-family: 'Raleway', sans-serif; 
+                     font-weight:600;
                 }
                 .hover-box-show,
                 .hover-box-showone,

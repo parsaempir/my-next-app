@@ -239,17 +239,21 @@ position: absolute;
 font-size: 60px;
 width: 100%;
 top:-35px;
-left: 45px
+left: 45px;
+font-weight: 400;
+  font-family: 'Secular One',sans-serif;
 }
 .in-slider h3 span{
-font-weight: 200;
+  font-weight: 100;
+   font-family: 'Raleway', sans-serif; 
 }
 .in-slider p{
   position: absolute;
   font-size: 25px;
 top:60px;
 left: 45px;
-  font-weight: 300;
+  font-weight: 100;
+   font-family: 'Raleway', sans-serif; 
   }
   .photo-slider{
     position: relative;
@@ -483,6 +487,8 @@ font-size: 80px;
   color: #111111;
 left: -10%;
 position: absolute;
+font-weight: 400;
+  font-family: 'Secular One',sans-serif;
 }
 
     

@@ -83,18 +83,22 @@ export default function ScrollHighlight() {
           position: "sticky",
           top: "0%",
           overflow: "hidden",
+          fontFamily: "'Raleway', sans-serif",
+            fontWeight: "100"
         }}
       >
-        <h1
+        <h3
           style={{
             fontSize: "50px",
             marginBottom: "1rem",
             color: "#000",
             lineHeight: "1.3",
+            fontFamily: " 'Secular One',sans-serif ",
+            fontWeight: "400"
           }}
         >
           {wrapWords(heading, "heading")}
-        </h1>
+        </h3>
         <p style={paragraphStyles}>
           {wrapWords("Choose a packaging style, quantity, and size custom or stock.", "p1")}
         </p>
