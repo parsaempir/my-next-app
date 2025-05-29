@@ -12,17 +12,19 @@ export default function ProductSlider() {
   const trackRef = useRef(null);
 
   useEffect(() => {
-    const total = 10; 
+    // Calculate the total scrollable width
+    const trackWidth = trackRef.current.scrollWidth;
+    const wrapperWidth = sectionRef.current.querySelector('.slider-box').clientWidth; // Get the width of the visible container
 
     gsap.to(trackRef.current, {
-      xPercent: -100 * (total - 1),
+      x: -(trackWidth - wrapperWidth), // Move by the difference between total content width and visible width
       ease: 'none',
       scrollTrigger: {
         trigger: sectionRef.current,
         start: 'top top',
         end: 'bottom bottom',
         scrub: true,
-        invalidateOnRefresh: true,
+        invalidateOnRefresh: true, // Crucial for responsive adjustments
       },
     });
 

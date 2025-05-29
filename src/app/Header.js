@@ -16,6 +16,7 @@ function Header() {
     const timeoutRefOne = useRef(null);
     const timeoutRefTwo = useRef(null);
 
+ 
     const mailerImages = [
         { src: "/Mailer Box.png", text: "Mailer Box", itemWidth: "500px", itemHeight: "auto" },
         { src: "/Shipper Box.png", text: "Shipper Box", itemWidth: "500px", itemHeight: "auto" },
@@ -211,6 +212,7 @@ function Header() {
                     padding-top: 40px;
                     padding-bottom: 20px;
                     overflow: hidden; 
+               
                 }
 
                 .hover-box-showone {
@@ -247,21 +249,17 @@ function Header() {
                     gap: 20px; 
                     justify-content: center; 
                     align-items: flex-start; 
-                    margin-left: auto; 
-                    margin-right: auto; */
+                    margin-left: auto;
+                    margin-right: auto; 
                     overflow-x: auto; 
                     flex-wrap: nowrap; 
                     height: 100%; 
                     padding: 0 20px; 
 
-                  
-                    /* برای 3 آیتم 500px: (500*3) + (2*20) = 1500 + 40 = 1540px */
-                    /* برای 2 آیتم 600px: (600*2) + (1*20) = 1200 + 20 = 1220px */
-                    /* برای 3 آیتم 500px: (500*3) + (2*20) = 1500 + 40 = 1540px */
+                   
                     min-width: calc(100% - 40px); 
+                }
 
-              
-              
                 .hover-box-show .image-container {
                     width: 1540px; 
                 }
@@ -280,16 +278,12 @@ function Header() {
                     transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease; 
                     flex-shrink: 0; 
                     box-sizing: border-box; 
-                    justify-content: flex-start;
-                    /* height: 350px; 
+                    justify-content: flex-start; 
                 }
                 
-                .image-item-wrapper:hover {
-                    transform: translateY(-5px);
-                }
+             
 
                 .image-item-wrapper.blurred {
-              
                     opacity: 0.3;
                 }
 
@@ -308,7 +302,6 @@ function Header() {
                     margin-left: auto; 
                     margin-right: auto; 
                     object-fit: contain; 
-                   
                 }
             `}</style>
         </>
