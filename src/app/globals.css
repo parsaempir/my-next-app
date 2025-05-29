@@ -4,8 +4,34 @@ height: 100%;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-
 }
 
+/* styles/fonts.css */
 
 
+
+@font-face {
+  font-family: 'Raleway'; /* نامی که می‌خواهید برای فونت استفاده کنید */
+  src: url('/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal; /* یا وزن‌های خاصی که فونت شما دارد */
+  font-style: normal;
+  font-display: swap; /* برای بهبود تجربه کاربری هنگام بارگذاری فونت */
+}
+
+@font-face {
+  font-family: 'Raleway Italic';
+  src: url('/fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic; /* اگر این فونت مخصوص استایل ایتالیک است */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Secular One';
+  src: url('/fonts/SecularOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* می‌توانید وزن‌های مختلف (مثلاً Bold, Light) را نیز به همین ترتیب تعریف کنید اگر فایل جداگانه دارند. */
