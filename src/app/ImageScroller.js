@@ -205,7 +205,7 @@ export default function ProductSlider() {
   .slider-item {
     flex-shrink: 0;
     width: 850px;
-    height: 550px;
+    height: 500px;
     background: #111111;
     border-radius: 50px;
     padding: 10px;
