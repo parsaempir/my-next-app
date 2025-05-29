@@ -75,7 +75,7 @@ export default function ProductSlider() {
 
             <div className="slider-item">
               <div className='in-slider'>
-                <h3> MAILER <span>Box</span></h3>
+                <h3> MAILER <span>BOX</span></h3>
                 <p>Sturdy, Self-Locking Packaging.</p>
                 <div className='photo-slider'>
                   <img className='photo-one' src='/10569485 3.png' id='hovre-box'/>
@@ -87,7 +87,7 @@ export default function ProductSlider() {
 
             <div className="slider-item1">
               <div className='in-slider'>
-                <h3>Shipper <span>Box</span></h3>
+                <h3> SHIPPER <span>BOX</span></h3>
                 <div className='photo-slider'>
                   <img className='photo-four'  id='hovre-box' src='/4.png' />
                   <img className='photo-five' id='hovre-box' src='/3.png' />
@@ -98,7 +98,7 @@ export default function ProductSlider() {
 
             <div className="slider-item">
               <div className='in-slider'>
-                <h3>FOLDED <span>Box</span></h3>
+                <h3>FOLDED <span>BOX</span></h3>
                 <div className='photo-slider'>
                   <img className='photo-seven' id='hovre-box' src='/1.png' />
                   <img className='photo-eight' id='hovre-box' src='/6.png' />
@@ -109,7 +109,7 @@ export default function ProductSlider() {
 
             <div className="slider-item1">
               <div className='in-slider'>
-                <h3>Courogated<br /> <span>Box</span></h3>
+                <h3> COUROGATED <span>BOX</span></h3>
                 <div className='photo-slider'>
                   <img className='photo-ten' id='hovre-box' src='/8.png' />
                   <img className='photo-eleven' id='hovre-box' src='/9.png' />
@@ -120,7 +120,7 @@ export default function ProductSlider() {
 
             <div className="slider-item">
               <div className='in-slider'>
-                <h3>Cardboard  <span>Box</span></h3>
+                <h3>  CARDBOARD<span>BOX</span></h3>
                 <div className='photo-slider'>
                   <img className='photo-thirteen' id='hovre-box' src='/11.png' />
                   <img className='photo-fourteen' id='hovre-box' src='/12.png' />
@@ -131,7 +131,7 @@ export default function ProductSlider() {
 
             <div className="slider-item1">
               <div className='in-slider'>
-                <h3>Gift  <span>Box</span></h3>
+                <h3>GIFT  <span>BOX</span></h3>
                 <div className='photo-slider'>
                   <img className='photo-sixteen' id='hovre-box' src='/19.png' />
                   <img className='photo-seventeen' id='hovre-box' src='/21.png' />
@@ -142,7 +142,7 @@ export default function ProductSlider() {
 
             <div className="slider-item">
               <div className='in-slider'>
-                <h3>Custom <span>Box</span></h3>
+                <h3> CUSTOM <span>BOX</span></h3>
                 <div className='photo-slider'>
                   <img className='photo-nineteen' id='hovre-box' src='/15.png' />
                   <img className='photo-twenty' id='hovre-box' src='/16.png' />
@@ -153,7 +153,7 @@ export default function ProductSlider() {
 
             <div className="slider-item1">
               <div className='in-slider'>
-                <h3>Setup <span>Box</span></h3>
+                <h3>  SETUP<span>BOX</span></h3>
                 <div className='photo-slider'>
                   <img className='photo-twentyfour' id='hovre-box' src='/19.png' />
                   <img className='photo-twentytwo' id='hovre-box' src='/18.png' />
@@ -220,8 +220,8 @@ export default function ProductSlider() {
   
   .slider-item1 {
     flex-shrink: 0;
-    width: 1000px;
-    height: 600px;
+   width: 800px;
+    height: 480px;
     background: #111111;
     border-radius: 50px;
     padding: 10px;
@@ -236,10 +236,10 @@ export default function ProductSlider() {
  
 .in-slider h3{
 position: absolute;
-font-size: 89px;
+font-size: 60px;
 width: 100%;
-left: 5%;
-top: -15%;
+top:-35px;
+left: 45px
 }
 .in-slider h3 span{
 font-weight: 200;
@@ -247,9 +247,8 @@ font-weight: 200;
 .in-slider p{
   position: absolute;
   font-size: 25px;
-  width: 100%;
-  left: 5%;
-  top:15%;
+top:60px;
+left: 45px;
   font-weight: 300;
   }
   .photo-slider{
@@ -257,225 +256,224 @@ font-weight: 200;
   }
   .photo-one{
     position: absolute;
-    width: 350px;
+    width: 280px;
     height: auto;
     object-fit: cover;
-    top: 100px;
-left: -130px; 
-    display:none;
+    top: 70px;
+left: -100px; 
 transform: rotate(5deg); }
   .photo-two{
     position: absolute;
-    width: 450px;
+    width: 350px;
     height: auto;
-    top: 200px;
-    left: 40px; 
+    top: 150px;
+    left: 50px; 
     transform: rotate(5deg);
-    display:none;
   }
   .photo-three{
     position: absolute;
-    width: 2200px;
+    width: 1750px;
     height: auto;
-top: -420px;
-left: -250px; 
-    display:none;
+top: -330px;
+left: -200px; 
 transform: rotate(10deg); }
 .photo-four{
   position: absolute;
-  width: 370px;
+  width: 330px;
   height: auto;
-    
   object-fit: cover;
-  top: 135px;
+  top: 90px;
 left: -130px; 
 transform: rotate(-10deg)
  }
 .photo-five{
   position: absolute;
-  width: 300px;
+  width: 270px;
   height: auto;
   object-fit: cover;
-top: 287px;
-left: 200px;
+top: 198px;
+left: 150px;
 
  }
 .photo-six{
   position: absolute;
-  width: 1100px;
+  width: 950px;
   height: auto;
   object-fit: cover;
-  top: -85px;
-left: 280px; 
+  top: -125px;
+left: 200px; 
 transform: rotate(-5deg)
 }
 .photo-seven{
   position: absolute;
-  width: 400px;
+  width: 350px;
   height: auto;
   object-fit: cover;
-  top: 100px;
-left: -130px; 
+  top: 70px;
+left: -110px; 
 transform: rotate(5deg)
 
  }
 .photo-eight{
   position: absolute;
-  width: 420px;
+  width: 350px;
   height: auto;
   object-fit: cover;
-top: 140px;
-left: 170px;
+top: 115px;
+left: 140px;
+transform: rotate(5deg)
 
  }
 .photo-nine{
   position: absolute;
-  width: 1300px;
+  width: 1100px;
   height: auto;
   object-fit: cover;
-  top: -115px;
-left: 190px; 
+  top: -130px;
+left: 110px; 
  transform: rotate(10deg);
 }
 .photo-ten{
   position: absolute;
-  width: 450px;
+  width: 400px;
   height: auto;
   object-fit: cover;
-  top: 170px;
-left: -190px; 
+  top: 120px;
+left: -170px; 
 transform: rotate(-10deg);
  }
 .photo-eleven{
   position: absolute;
-  width: 400px;
+  width: 350px;
   height: auto;
   object-fit: cover;
-top: 310px;
-left: 180px;
+top: 220px;
+left: 160px;
 
  }
 .photo-twelve{
   position: absolute;
-  width: 1500px;
+  width: 1200px;
   height: auto;
   object-fit: cover;
-  top: -380px;
-left: 120px; 
+  top: -300px;
+left: 140px; 
 transform: rotate(-10deg);
 }
 .photo-thirteen{
   position: absolute;
-  width: 400px;
+  width:310px;
   height: auto;
   object-fit: cover;
-  top: 95px;
-left: -110px; 
+  top: 85px;
+left: -85px; 
 transform: rotate(5deg);
  }
 .photo-fourteen{
   position: absolute;
-  width: 380px;
+  width: 300px;
   height: auto;
   object-fit: cover;
-top: 240px;
-left: 210px;
+top: 195px;
+left: 170px;
 transform: rotate(10deg);
 
  }
 .photo-fifteen{
   position: absolute;
-  width: 1400px;
+  width: 1200px;
   height: auto;
   object-fit: cover;
-  top: -150px;
-left: 210px; 
+  top: -170px;
+left: 120px; 
 transform: rotate(10deg);
 
 }
 .photo-sixteen{
   position: absolute;
-  width: 470px;
+  width: 400px;
   height: auto;
   object-fit: cover;
-  top: 0px;
-left: -160px; 
+  top: 20px;
+left: -135px; 
 transform: rotate(-10deg);
  }
 .photo-seventeen{
   position: absolute;
-  width: 350px;
+  width: 300px;
   height: auto;
   object-fit: cover;
-top: 210px;
-left: 165px;
+top: 145px;
+left: 150px;
 transform: rotate(-10deg);
 
  }
 .photo-eighteen{
   position: absolute;
-  width: 1300px;
+  width: 1020px;
   height: auto;
   object-fit: cover;
-  top: -185px;
-left: 180px; 
+  top: -150px;
+left: 160px; 
 transform: rotate(-5deg);
 
 }
 .photo-nineteen{
   position: absolute;
-  width: 650px;
+  width: 520px;
   height: auto;
   object-fit: cover;
-  top: -30px;
-left: -300px; 
+  top: -20px;
+left: -240px; 
 transform: rotate(10deg);
 
  }
 .photo-twenty{
   position: absolute;
-  width: 400px;
+  width: 350px;
   height: auto;
   object-fit: cover;
-top: 260px;
-left: 150px;
+top: 185px;
+left: 130px;
+transform: rotate(5deg);
 
  }
 .photo-twentyone{
   position: absolute;
-  width: 1350px;
+  width: 1000px;
   height: auto;
   object-fit: cover;
-  top: -370px;
-left: 235px; 
-transform: rotate(10deg);
+  top: -250px;
+left:210px; 
+transform: rotate(5deg);
+
 
 }
 .photo-twentytwo{
   position: absolute;
-  width:260px;
+  width:220px;
   height: auto;
   object-fit: cover;
-top: 340px;
-left: 170px;
+top: 255px;
+left: 140px;
  }
 .photo-twentythree{
   position: absolute;
-  width: 1500px;
+  width: 1200px;
   height: auto;
   object-fit: cover;
-  top: -310px;
-left: 200px; 
+  top: -270px;
+left: 180px; 
 transform: rotate(-5deg);
 
 }
 .photo-twentyfour{
   position: absolute;
-  width: 510px;
+  width: 400px;
   height: auto;
   object-fit: cover;
-  top: 0px;
-left: -200px; 
+  top: 15px;
+left: -140px; 
 transform: rotate(-10deg);
  }
 .text-div h3 {
