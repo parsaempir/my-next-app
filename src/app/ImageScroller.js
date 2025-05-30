@@ -180,7 +180,8 @@ opacity: "0"
   .slider-section {
     height: 800vh;
     position: relative;
-  
+
+  background-color: transparent;
   }
   
   .slider-wrapper {
@@ -190,6 +191,7 @@ opacity: "0"
     display: flex;
     align-items: center;
     justify-content: center;
+     margin-top: 250px;
   }
   
   .slider-box {
@@ -198,8 +200,8 @@ opacity: "0"
     background: white;
     border-radius: 24px;
     overflow: hidden;
-    padding: 300px 0px 300px 400px ;
- margin-top: 250px;
+    padding: 300px 0px 0px 400px ;
+
  
   }
   
