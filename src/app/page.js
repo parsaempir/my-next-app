@@ -158,7 +158,7 @@ export default function Home() {
 .head-Hero-Section {
   position: relative;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1800px;
   margin: auto;
  height: 1000px;
   display: flex;
@@ -198,7 +198,7 @@ export default function Home() {
 .hero-box2 {
   width: 700px;
   top: -100px;
-  right: 80px;
+  right: 200px;
   transform: rotate(10deg);
 }
 
@@ -211,9 +211,10 @@ export default function Home() {
 
 .hero-box4 {
   width: 800px;
-  bottom: 20px;
-  right: 1px;
-  transform: rotate(-5deg);
+top:-450px;
+  right: 200px;
+  padding: 500px 0 0 0;
+
 }
 
 .header-text {
