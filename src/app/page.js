@@ -204,7 +204,7 @@ export default function Home() {
 
 .hero-box3 {
   width: 650px;
-  bottom: 50px;
+  bottom: 180px;
   left: 0px;
   transform: rotate(5deg);
 }
@@ -221,7 +221,9 @@ top:-450px;
   position: absolute;
   text-align: center;
   z-index: 2;
-  top:300px;
+
+  left:880px;
+    transform: translate(-50%, -30%);
 }
 
 .header-text h1 {
@@ -253,7 +255,8 @@ top:-450px;
 }
 
 
-
+@media (max-width:1550px) {
+}
 .section-one{
     background-color: #111111;
     padding-top: 150px;
