@@ -54,7 +54,7 @@ function Header() {
             <nav>
                 <div className="head-nav">
 
-                    <span>
+                    <span className="logo-nav">
                         <img src="/logo.svg" alt="Logo" />
                     </span>
                     <span className="head-nav-center">
@@ -164,8 +164,8 @@ function Header() {
                 }
                 .head-nav {
                     width: 100%;
-                    max-width: 1750px;
-                    margin: auto;
+                    
+                    
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
@@ -190,7 +190,11 @@ function Header() {
                     display: flex;
                     align-items: center;
                     gap: 15px;
+                    padding-right:70px;
                 }
+                    .logo-nav{
+                    padding-left:70px;
+                    }
                 .head-nav-end button {
                     font-size: 16px;
                     padding: 10px 16px 10px 28px;
