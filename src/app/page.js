@@ -153,97 +153,102 @@ export default function Home() {
 <Footer/>
 
 <style>{`
-.header-text{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    position: absolute;
-    top: 30px;
-    left: 450px;
-}
-.header-text h1{
-    font-size: 50px;
-    margin-bottom: 0;
-    font-family: 'Secular One',sans-serif;
-    font-weight:400;
-}
-.header-text h4{
-    font-size: 16px;
-   margin-bottom: 65px;
-   color: #CFCFCF;
-     font-weight:500;
-     font-family: 'Raleway', sans-serif; 
-     line-height: 1.5;
-}
-.header-text span button{
-width: 233px;
-height: 44px;
-border-radius: 100px;
-background-color: #111111;
-color: white;
-    font-family: 'Secular One',sans-serif;
-    font-weight:400;
-    border:none;
-    cursor: pointer;
-}
- 
-.Hero-Section{
-    padding-top: 100px;
-    width: 100%;
-    max-width: 1600px;
-    margin: auto;
-    position: relative;
-}
-.header-text{
-    padding-top: 250px;
-}
-
-.head-box-img{
+.Hero-Section {
   position: relative;
-  height:1000px;
- 
-
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 100px;
+  overflow: hidden;
 }
 
+.head-box-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
 
+.hero-box1,
+.hero-box2,
+.hero-box3,
+.hero-box4 {
+  position: absolute;
+  z-index: 1;
+}
 
-.hero-box1{
+/* 👇 باکس بالا سمت چپ */
+.hero-box1 {
   width: 600px;
-  height: auto;
-  position: absolute;
-  top: -250px;
-z-index: -1;
-  transform: rotate(-15deg);
+  top: 40px;
+  left: 60px;
+  transform: rotate(-8deg);
 }
 
-.hero-box2{
+/* 👇 باکس بالا سمت راست */
+.hero-box2 {
   width: 700px;
-  height: auto;
-  position: absolute;
-top: -200px;
-  right: -1px;
+  top: 50px;
+  right: 80px;
   transform: rotate(10deg);
-  z-index: -1;
 }
 
-.hero-box3{
-  width: 650px;
-  height: auto;
-  position: absolute;
-top: 370px;
-
+/* 👇 باکس پایین سمت چپ */
+.hero-box3 {
+  width: 600px;
+  bottom: 40px;
+  left: 60px;
   transform: rotate(5deg);
 }
 
+/* 👇 باکس پایین سمت راست */
 .hero-box4 {
   width: 800px;
-  height: auto;
-  position: absolute;
-top: 100px;
-  right: -100px;
+  bottom: 20px;
+  right: 60px;
   transform: rotate(-5deg);
 }
+
+.header-text {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.header-text h1 {
+  font-size: 54px;
+  font-family: 'Secular One', sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.header-text h4 {
+  font-size: 18px;
+  color: #CFCFCF;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+
+.header-text span button {
+  width: 240px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: #111111;
+  color: white;
+  font-family: 'Secular One', sans-serif;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+}
+
 
 
 .section-one{
