@@ -11,6 +11,7 @@ export default function Home() {
 <Header/>
 
 <div className="Hero-Section">
+  <div className="head-Hero-Section">
   <div className="head-box-img"><img src="/Screenshot 2025-03-25 at 4.44.07 PM 1 2.png" alt="Box1" className="hero-box1"/>
         <img src="/Screenshot 2025-03-25 at 4.43.58 PM 1 2.png" alt="Box 2" className="hero-box2"/>
         <img src="/Screenshot 2025-03-25 at 4.44.21 PM 1 2.png" alt="Box 3" className="hero-box3"/>
@@ -25,7 +26,7 @@ export default function Home() {
 <span><button>ORDER</button></span>
 </div>
 
-
+</div>
 </div>
 
 
@@ -153,17 +154,19 @@ export default function Home() {
 <Footer/>
 
 <style>{`
-.Hero-Section {
+
+.head-Hero-Section {
   position: relative;
   width: 100%;
   max-width: 1600px;
-  margin: 0 auto;
-  min-height: 100vh;
+  margin: auto;
+ height: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 100px 100px;
   overflow: hidden;
+
 }
 
 .head-box-img {
@@ -180,45 +183,44 @@ export default function Home() {
 .hero-box4 {
   position: absolute;
   z-index: 1;
+    
 }
 
-/* 👇 باکس بالا سمت چپ */
+
 .hero-box1 {
   width: 600px;
-  top: 40px;
-  left: 60px;
+  top: -100px;
+  left: 0px;
   transform: rotate(-8deg);
 }
 
-/* 👇 باکس بالا سمت راست */
+
 .hero-box2 {
   width: 700px;
-  top: 50px;
+  top: -100px;
   right: 80px;
   transform: rotate(10deg);
 }
 
-/* 👇 باکس پایین سمت چپ */
 .hero-box3 {
-  width: 600px;
-  bottom: 40px;
-  left: 60px;
+  width: 650px;
+  bottom: 50px;
+  left: 0px;
   transform: rotate(5deg);
 }
 
-/* 👇 باکس پایین سمت راست */
 .hero-box4 {
   width: 800px;
   bottom: 20px;
-  right: 60px;
+  right: 1px;
   transform: rotate(-5deg);
 }
 
 .header-text {
-  position: relative;
+  position: absolute;
   text-align: center;
   z-index: 2;
-  max-width: 900px;
+  top:300px;
 }
 
 .header-text h1 {
