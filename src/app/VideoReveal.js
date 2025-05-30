@@ -14,27 +14,27 @@ export default function VideoReveal() {
   useEffect(() => {
     const video = videoRef.current;
 
-    gsap.set(video, {
+    /*gsap.set(video, {
       clipPath: 'circle(10% at 50% 50%)',
-    });
+    });*/
 
 
-    /*const screenWidth = window.innerWidth;
+    const screenWidth = window.innerWidth;
 
    
-    let initialClipPath = 'circle(10% at 50% 50%)';
+    let initialClipPath = 'circle(9.5% at 50% 50%)';
   
-    if (screenWidth > 1400) {
-      initialClipPath = 'circle(7% at 50% 50%)';
+    if (screenWidth < 1700) {
+      initialClipPath = 'circle(12% at 50% 50%)';
     } else if (screenWidth < 768) {
       initialClipPath = 'circle(20% at 50% 50%)';
     }
   
     gsap.set(video, {
       clipPath: initialClipPath,
-    });*/
+    });
 
-    
+
     gsap.to(video, {
       clipPath: 'circle(150% at 50% 50%)',
       ease: 'power2.inOut',
