@@ -200,7 +200,7 @@ opacity: "0"
     background: white;
     border-radius: 24px;
     overflow: hidden;
-    padding: 300px 0px 0px 400px ;
+    padding: 400px 0px 0px 400px ;
 
  
   }
