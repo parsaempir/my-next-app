@@ -149,7 +149,7 @@ function Header() {
                     </div>
                     <span className="head-nav-end">
                         <img src="/Basket_alt_3_fill.svg" alt="Basket Icon" />
-                        <button>Account <img src="Expand_right_light (1).svg" alt="Expand Icon" /></button>
+                       <a href="#"> <button>Account <img src="Expand_right_light (1).svg" alt="Expand Icon" /></button></a>
                     </span>
                 </div>
             </nav>
@@ -161,6 +161,7 @@ function Header() {
                 position: sticky;
                 top:0;
                 z-index: 9999;
+                  background-color: #ffffff;
                 }
                 .head-nav {
                     width: 100%;
@@ -195,6 +196,10 @@ function Header() {
                     .logo-nav{
                     padding-left:70px;
                     }
+                     .head-nav-end a{
+                     text-decoration: none;
+
+                     }
                 .head-nav-end button {
                     font-size: 16px;
                     padding: 10px 16px 10px 28px;
@@ -207,12 +212,13 @@ function Header() {
                     gap: 10px;
                      font-family: 'Raleway', sans-serif; 
                      font-weight:600;
+                     cursor: pointer;
                 }
                 .hover-box-show,
                 .hover-box-showone,
                 .hover-box-showtwo {
                     position: absolute;
-                    top: 50px;
+                    top: 40px;
                     left: 0;
                     background-color: white;    
                     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -263,7 +269,7 @@ function Header() {
                     align-items: flex-start; 
                     margin-left: auto;
                     margin-right: auto; 
-                    overflow-x: auto; 
+                    overflow: hidden; 
                     flex-wrap: nowrap; 
                     height: 100%; 
                     padding: 0 20px; 

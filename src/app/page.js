@@ -185,6 +185,7 @@ color: white;
     font-family: 'Secular One',sans-serif;
     font-weight:400;
     border:none;
+    cursor: pointer;
 }
  
 .Hero-Section{
@@ -201,6 +202,8 @@ color: white;
 .head-box-img{
   position: relative;
   height:1000px;
+  cursor: pointer;
+
 }
 
 
@@ -291,8 +294,7 @@ display: flex;
     position: relative;
     border-radius: 25px;
     overflow: hidden;
-
-  }
+cursor: pointer;  }
 
   .box img {
     width: 100%;
@@ -310,7 +312,6 @@ top: 30px;
     font-weight: 400;
         font-family: 'Secular One',sans-serif;
     text-transform: uppercase;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   }
 .box-label span{
   font-family: 'Raleway', sans-serif;
@@ -337,7 +338,6 @@ top: 45%;
    font-weight: 400;
         font-family: 'Secular One',sans-serif;
     text-transform: uppercase;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   }
   .box-label-two {
     position: absolute;
@@ -348,7 +348,6 @@ top: 50%;
    font-weight: 400;
         font-family: 'Secular One',sans-serif;
     text-transform: uppercase;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   }
   .box-label-three {
     position: absolute;
@@ -359,7 +358,6 @@ bottom: 5%;
     font-weight: 400;
         font-family: 'Secular One',sans-serif;
     text-transform: uppercase;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   }
   .box-label-four {
     position: absolute;
@@ -370,7 +368,6 @@ bottom: 10%;
     font-weight: 400;
         font-family: 'Secular One',sans-serif;
     text-transform: uppercase;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   }
   .gallery .box:nth-child(7) {
     grid-area: gift;

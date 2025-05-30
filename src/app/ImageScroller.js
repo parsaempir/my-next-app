@@ -160,8 +160,15 @@ export default function ProductSlider() {
                   <img className='photo-twentythree' src='/20.png' />
                 </div>
               </div>
+ 
             </div>
 
+            <div style={{
+width:"800px",
+height: "auto",
+opacity: "0"
+}}>&nbsp; vacant
+</div>
           </div>
         </div>
       </div>
@@ -214,7 +221,7 @@ export default function ProductSlider() {
     flex-direction: column;
     color: white;
     transform: rotate(-5deg);
-
+cursor: pointer;
     position: relative;
   }
   
@@ -231,7 +238,7 @@ export default function ProductSlider() {
  color: white;
     transform: rotate(5deg);
     position: relative;
-
+cursor: pointer;
   }
  
 .in-slider h3{
