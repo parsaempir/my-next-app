@@ -15,7 +15,7 @@ export default function VideoReveal() {
     const video = videoRef.current;
 
     gsap.set(video, {
-      clipPath: 'circle(6.5% at 50% 50%)',
+      clipPath: 'circle(9.5% at 50% 50%)',
     });
 
     gsap.to(video, {
@@ -87,6 +87,7 @@ export default function VideoReveal() {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+          
           }}
         >
 
@@ -104,6 +105,7 @@ export default function VideoReveal() {
               position: 'absolute',
               top: 0,
               left: 0,
+                cursor: "pointer"
             }}
           />
 
@@ -134,7 +136,6 @@ export default function VideoReveal() {
               style={{
                 width: '50px',
                 height: '50px',
-                filter: 'drop-shadow(0 2px 2px rgba(0,0,0,0.3))',
               }}
             />
           </div>

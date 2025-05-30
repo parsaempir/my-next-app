@@ -202,7 +202,7 @@ color: white;
 .head-box-img{
   position: relative;
   height:1000px;
-  cursor: pointer;
+ 
 
 }
 
@@ -308,7 +308,7 @@ object-fit: cover;
 top: 30px;
     left: 5.5%;
     color: white;
-    font-size: 38px;
+    font-size: 35px;
     font-weight: 400;
         font-family: 'Secular One',sans-serif;
     text-transform: uppercase;
@@ -334,7 +334,7 @@ top: 30px;
 top: 45%;
     left: 35%;
     color: white;
-     font-size:38px;
+     font-size:35px;
    font-weight: 400;
         font-family: 'Secular One',sans-serif;
     text-transform: uppercase;
@@ -344,7 +344,7 @@ top: 45%;
 top: 50%;
     left: 130px;
     color: white;
-     font-size: 38px;
+     font-size: 35px;
    font-weight: 400;
         font-family: 'Secular One',sans-serif;
     text-transform: uppercase;
@@ -354,7 +354,7 @@ top: 50%;
 bottom: 5%;
     left: 10%;
     color: white;
-    font-size: 38px;
+    font-size: 35px;
     font-weight: 400;
         font-family: 'Secular One',sans-serif;
     text-transform: uppercase;
@@ -364,7 +364,7 @@ bottom: 5%;
 bottom: 10%;
     left: 5%;
     color: white;
-    font-size: 38px;
+    font-size: 35px;
     font-weight: 400;
         font-family: 'Secular One',sans-serif;
     text-transform: uppercase;

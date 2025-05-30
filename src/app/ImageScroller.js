@@ -287,7 +287,9 @@ transform: rotate(5deg); }
     height: auto;
 top: -330px;
 left: -200px; 
-transform: rotate(10deg); }
+transform: rotate(10deg); 
+pointer-events: none;
+}
 .photo-four{
   position: absolute;
   width: 330px;
@@ -295,7 +297,8 @@ transform: rotate(10deg); }
   object-fit: cover;
   top: 90px;
 left: -130px; 
-transform: rotate(-10deg)
+transform: rotate(-10deg);
+
  }
 .photo-five{
   position: absolute;
@@ -313,7 +316,8 @@ left: 150px;
   object-fit: cover;
   top: -125px;
 left: 200px; 
-transform: rotate(-5deg)
+transform: rotate(-5deg);
+pointer-events: none;
 }
 .photo-seven{
   position: absolute;
@@ -343,6 +347,7 @@ transform: rotate(5deg)
   top: -130px;
 left: 110px; 
  transform: rotate(10deg);
+ pointer-events: none;
 }
 .photo-ten{
   position: absolute;
@@ -370,6 +375,7 @@ left: 160px;
   top: -300px;
 left: 140px; 
 transform: rotate(-10deg);
+pointer-events: none;
 }
 .photo-thirteen{
   position: absolute;
@@ -398,6 +404,7 @@ transform: rotate(10deg);
   top: -170px;
 left: 120px; 
 transform: rotate(10deg);
+pointer-events: none;
 
 }
 .photo-sixteen{
@@ -427,6 +434,7 @@ transform: rotate(-10deg);
   top: -150px;
 left: 160px; 
 transform: rotate(-5deg);
+pointer-events: none;
 
 }
 .photo-nineteen{
@@ -457,7 +465,7 @@ transform: rotate(5deg);
   top: -250px;
 left:210px; 
 transform: rotate(5deg);
-
+pointer-events: none;
 
 }
 .photo-twentytwo{
@@ -476,7 +484,7 @@ left: 140px;
   top: -270px;
 left: 180px; 
 transform: rotate(-5deg);
-
+pointer-events: none;
 }
 .photo-twentyfour{
   position: absolute;

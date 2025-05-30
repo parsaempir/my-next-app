@@ -162,6 +162,7 @@ function Header() {
                 top:0;
                 z-index: 9999;
                   background-color: #ffffff;
+                  padding:15px 0;
                 }
                 .head-nav {
                     width: 100%;
@@ -193,6 +194,10 @@ function Header() {
                     gap: 15px;
                     padding-right:70px;
                 }
+                      .head-nav-end img{
+   cursor: pointer;
+
+                      }
                     .logo-nav{
                     padding-left:70px;
                     }
@@ -218,7 +223,7 @@ function Header() {
                 .hover-box-showone,
                 .hover-box-showtwo {
                     position: absolute;
-                    top: 40px;
+                    top: 70px;
                     left: 0;
                     background-color: white;    
                     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
