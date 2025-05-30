@@ -222,7 +222,7 @@ top:-450px;
   text-align: center;
   z-index: 2;
 
-  left:880px;
+  left:44%;
     transform: translate(-50%, -30%);
 }
 
