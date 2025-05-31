@@ -444,7 +444,13 @@ bottom: 10%;
 }
 
 
+button {
+  transition: transform 0.2s ease;
+}
 
+button:hover {
+  transform: scaleX(0.96);
+}
 
 `}</style>
     </>
