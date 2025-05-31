@@ -200,7 +200,7 @@ opacity: "0"
     background: white;
     border-radius: 24px;
     overflow: hidden;
-    padding: 350px 0px 0px 400px ;
+    padding: 350px 0px 0px 250px ;
 
  
   }
@@ -502,13 +502,13 @@ transform: rotate(-10deg);
 font-size: 80px;
   border-radius: 50px;
   color: #111111;
-left: -10%;
-position: absolute;
+    position: absolute;
 font-weight: 400;
   font-family: 'Secular One',sans-serif;
 }
+.text-div{
+padding:0 150px 0 50px;}
 
-    
     `}
 
     </style>
