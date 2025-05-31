@@ -200,8 +200,12 @@ function Header() {
                 }
                       .head-nav-end img{
    cursor: pointer;
+  transition: all 0.2s ease;
 
                       }
+    .head-nav-end img:hover{
+opacity:0.6;    
+    }
                     .logo-nav{
                     padding-left:70px;
                     }
