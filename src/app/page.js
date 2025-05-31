@@ -146,8 +146,8 @@ export default function Home() {
       </div>
       <div className="image">
         <img src="/What we do Section.png" className="img" />
-        <div className="order-con">
-          <button className="order">ORDER</button>
+        <div className="head-order">
+          <button className="order-btn">ORDER</button>
         </div>
       </div>
 
@@ -417,7 +417,7 @@ bottom: 10%;
   filter: brightness(20%);
 }
 
-.order-con {
+.head-order {
   position: absolute;
   top: 10%;
   left: 0;
@@ -429,7 +429,7 @@ bottom: 10%;
   pointer-events: none;
 }
 
-.order {
+.order-btn {
   background-color: white;
   color: black;
   font-size: 32px;
@@ -444,14 +444,14 @@ bottom: 10%;
 }
 
 
-button {
+
+                button {
   transition: transform 0.2s ease;
 }
 
 button:hover {
-  transform: scaleX(0.96);
+  transform: scaleX(0.96); 
 }
-
 `}</style>
     </>
   );

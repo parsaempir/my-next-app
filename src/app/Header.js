@@ -187,7 +187,11 @@ function Header() {
                     z-index: 999;
                     cursor: pointer;
                     height: 50px;
+                      transition: all 0.2s ease;
                 }
+                     .head-nav-center span:hover{
+                     opacity:0.6;
+                     }
                 .head-nav-end {
                     display: flex;
                     align-items: center;
@@ -327,6 +331,9 @@ function Header() {
                     margin-right: auto; 
                     object-fit: contain; 
                 }
+
+
+
             `}</style>
         </>
     );

@@ -100,8 +100,11 @@ export default function Footer() {
                     line-height: 1.5; 
                     margin-bottom: 5px; 
                                font-family: 'Raleway', sans-serif;
-                }
+                                                     transition: all 0.2s ease;
 
+                }
+ .link-column li:hover{
+ opacity:0.6;}
                 .link-column a {
                     text-decoration: none;
                     cursor: pointer; 

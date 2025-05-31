@@ -84,7 +84,8 @@ export default function ScrollHighlight() {
           top: "0%",
           overflow: "hidden",
           fontFamily: "'Raleway', sans-serif",
-            fontWeight: "100"
+            fontWeight: "100",
+            paddingTop:"50px",
         }}
       >
         <h3
