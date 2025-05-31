@@ -120,7 +120,7 @@ export default function ProductSlider() {
 
             <div className="slider-item">
               <div className='in-slider'>
-                <h3>  CARDBOARD<span>BOX</span></h3>
+                <h3>  CARDBOARD <span>BOX</span></h3>
                 <div className='photo-slider'>
                   <img className='photo-thirteen' id='hovre-box' src='/11.png' />
                   <img className='photo-fourteen' id='hovre-box' src='/12.png' />
@@ -153,7 +153,7 @@ export default function ProductSlider() {
 
             <div className="slider-item1">
               <div className='in-slider'>
-                <h3>  SETUP<span>BOX</span></h3>
+                <h3>  SETUP <span>BOX</span></h3>
                 <div className='photo-slider'>
                   <img className='photo-twentyfour' id='hovre-box' src='/19.png' />
                   <img className='photo-twentytwo' id='hovre-box' src='/18.png' />
@@ -200,7 +200,7 @@ opacity: "0"
     background: white;
     border-radius: 24px;
     overflow: hidden;
-    padding: 350px 0px 0px 50px ;
+    padding: 350px 0px 0px 250px ;
 
  
   }
