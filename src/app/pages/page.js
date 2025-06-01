@@ -14,9 +14,14 @@ const handleCloseModal = () => {
 };
   return (<>
   <Header/>
+  <div style={{
+    width:"100%",
+    height:"100%"
+
+  }}>
     <div style={{
             width: '1116px',
-            height:"400px",
+            height:"auto",
         
    padding:"100px 0 0 70px",
    
@@ -412,6 +417,47 @@ justifyContent:"center"
           Remember to use one of our pre-made die-line templates! All downloads can be found here.
         </p>
       </div>
+    </div>
+    <div style={{
+position:"relative"
+
+    }}><img src='Screenshot 2025-03-25 at 4.44.15 PM 1 (2).png' height="1200px" style={{
+      position:"absolute",
+      left:"70%",              transform: 'translate(-50%, -65%)',
+
+    }}
+    /></div>
+    <div style={{
+         padding:"50px 0 0 70px",
+       fontFamily: " 'Raleway',sans-serif",
+        fontWeight:"600",
+        fontSize:"18px",
+        color:"#707070"
+    }}>
+      <p>22 Reviews Go for a stylish and sturdy custom mailer box designed to ship directly in the mail. Choose between<br/> black ink or colored printing to suit your brand. Perfect  for retail-ready gift boxes, subscription boxes, and e-<br/>commerce packaging. Need something different? You can check out our customizable<span style={{
+        textDecoration:"underline"}}> Shipping<br/> Boxes </span>and <span style={{ textDecoration:"underline"}}>Product Boxes </span>for your different packaging needs!</p>
+    </div>
+    <div style={{
+         padding:"0 0 0 70px",
+display:"flex",
+alignItems:"center",
+gap:"5rem"
+
+    }}><img src='Frame 142343482.png'/> 
+    <div>  <button style={{
+background:"#604BA0",
+color:"#FFFFFF",
+border:"none",
+borderRadius:"100px",
+fontSize:"32px",
+fontFamily: " 'Raleway',sans-serif",
+        fontWeight:"600",
+        width:"627px",
+        height:"80px"
+
+
+    }}>Download the die-line for this box</button></div>
+  </div>
     </div>
     <UploadModal isOpen={isModalOpen} onClose={handleCloseModal}/>
     <style>
