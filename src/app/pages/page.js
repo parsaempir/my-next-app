@@ -24,7 +24,7 @@ const handleCloseModal = () => {
             height:"auto",
         
    padding:"100px 0 0 70px",
-   
+
 
 
     }}>
@@ -42,8 +42,9 @@ const handleCloseModal = () => {
         borderRadius: '25px',
         width: '1116px',
 height:"400px",
-     
-      }}>
+position:"relative",
+        zIndex:"10"
+      }} className='head-sectionone-pagetwo'>
         <h3 style={{
           fontSize: '24px',
           fontWeight: 'bold',
@@ -411,7 +412,8 @@ justifyContent:"center"
           fontSize: '18px',
           color: '#707070',
           marginTop: '2.5rem',
-        
+          fontFamily: " 'Raleway',sans-serif",
+          fontWeight:"600",
   
         }}>
           Remember to use one of our pre-made die-line templates! All downloads can be found here.
@@ -421,9 +423,10 @@ justifyContent:"center"
     <div style={{
 position:"relative"
 
-    }}><img src='Screenshot 2025-03-25 at 4.44.15 PM 1 (2).png' height="1200px" style={{
+    }}><img src='Screenshot 2025-03-25 at 4.44.15 PM 1 (2).png' height="1200px" className='box-img-pagetwo'  style={{
       position:"absolute",
-      left:"70%",              transform: 'translate(-50%, -65%)',
+   right:"-17%", transform: 'translate(-50%, -65%)',
+      zIndex:"0",
 
     }}
     /></div>
@@ -443,7 +446,7 @@ display:"flex",
 alignItems:"center",
 gap:"5rem"
 
-    }}><img src='Frame 142343482.png'/> 
+    }}><img src='Frame 142343482.png' /> 
     <div>  <button style={{
 background:"#604BA0",
 color:"#FFFFFF",
@@ -453,8 +456,8 @@ fontSize:"32px",
 fontFamily: " 'Raleway',sans-serif",
         fontWeight:"600",
         width:"627px",
-        height:"80px"
-
+        height:"80px",
+        
 
     }}>Download the die-line for this box</button></div>
   </div>
@@ -470,8 +473,21 @@ height: 100%;
     overflow-x: hidden;
    background-color: #f3f4f6;
 }
+
+ 
       
-      
+    @media (max-width:1800px) {
+      .head-sectionone-pagetwo{
+        transform: scaleX(0.8); 
+      }
+     
+      .box-img-pagetwo {
+    left: 82%;           
+
+    height: 800px;        
+  }
+        
+    }
       `}
     </style>
     </>
