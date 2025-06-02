@@ -490,7 +490,7 @@ height: 100%;
    .head-sectionone-pagetwo{  transform: scaleX(0.9); 
 }
         .box-img-pagetwo {
-    left: 85%;           
+    left: 82.5%;           
 
     
   }
