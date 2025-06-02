@@ -477,17 +477,24 @@ height: 100%;
  
       
     @media (max-width:1800px) {
-      .head-sectionone-pagetwo{
-        transform: scaleX(0.8); 
-      }
+  
      
       .box-img-pagetwo {
-    left: 82%;           
+    left: 80%;           
 
     height: 800px;        
   }
         
     }
+   @media (max-width:1600px) {
+   .head-sectionone-pagetwo{  transform: scaleX(0.9); 
+}
+        .box-img-pagetwo {
+    left: 85%;           
+
+    
+  }
+   }
       `}
     </style>
     </>
