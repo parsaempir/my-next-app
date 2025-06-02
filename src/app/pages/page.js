@@ -430,17 +430,17 @@ position:"relative"
 
     }}
     /></div>
-    <div style={{
+    <div className='text-secondary' style={{
          padding:"50px 0 0 70px",
        fontFamily: " 'Raleway',sans-serif",
         fontWeight:"600",
         fontSize:"18px",
         color:"#707070"
-    }}>
+    }} >
       <p>22 Reviews Go for a stylish and sturdy custom mailer box designed to ship directly in the mail. Choose between<br/> black ink or colored printing to suit your brand. Perfect  for retail-ready gift boxes, subscription boxes, and e-<br/>commerce packaging. Need something different? You can check out our customizable<span style={{
         textDecoration:"underline"}}> Shipping<br/> Boxes </span>and <span style={{ textDecoration:"underline"}}>Product Boxes </span>for your different packaging needs!</p>
     </div>
-    <div style={{
+    <div className='img-btn-container' style={{
          padding:"0 0 0 70px",
 display:"flex",
 alignItems:"center",
@@ -487,7 +487,10 @@ height: 100%;
         
     }
    @media (max-width:1600px) {
-   .head-sectionone-pagetwo{  transform: scaleX(0.9); 
+   .head-sectionone-pagetwo,
+   .text-secondary,
+   .img-btn-container
+   {  transform: scaleX(0.9); 
 }
         .box-img-pagetwo {
     left: 82.5%;           
