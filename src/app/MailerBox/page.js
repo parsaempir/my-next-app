@@ -21,7 +21,9 @@ const handleCloseModal = () => {
   <div style={{
     width:"100%",
     height:"100%",
-    paddingBottom:"150px"
+    paddingBottom:"150px",
+    maxWidth:"2000px",
+    margin:"auto"
 
   }}>
     <div style={{

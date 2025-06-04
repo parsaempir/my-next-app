@@ -1,5 +1,69 @@
 'use client';
-import { useState } from 'react';
+
+import { useRef, useState, useEffect } from 'react';
+
+const AccordionItem = ({ index, title, children, openIndex, toggleItem }) => {
+  const contentRef = useRef(null);
+  const isOpen = openIndex === index;
+  const [height, setHeight] = useState('0px');
+  const [opacity, setOpacity] = useState(0);
+
+  useEffect(() => {
+    if (isOpen && contentRef.current) {
+      setHeight(`${contentRef.current.scrollHeight}px`);
+      setOpacity(1);
+    } else {
+      setHeight('0px');
+      setOpacity(0);
+    }
+  }, [isOpen]);
+
+  return (
+    <div style={{
+      backgroundColor: 'rgba(17, 17, 17, 0.35)',
+      color: '#fff',
+      backdropFilter: 'blur(10px)',
+      borderRadius: '25px',
+      marginBottom: '15px',
+      overflow: 'hidden',
+      transition: 'all 0.4s ease',
+    }}>
+      <div
+        onClick={() => toggleItem(index)}
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          cursor: 'pointer',
+          padding: '1px 20px',
+          fontWeight: 'bold',
+          height: '60px',
+        }}
+      >
+        <span>{title}</span>
+        <img
+          src={isOpen ? '/Vector (2).svg' : '/Vector (1).svg'}
+          alt={isOpen ? 'Close' : 'Open'}
+          style={{
+            transition: 'transform 0.4s ease-in-out',
+            transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+          }}
+        />
+      </div>
+      <div
+        ref={contentRef}
+        style={{
+          height,
+          opacity,
+          transition: 'height 0.4s ease, opacity 0.4s ease',
+          padding: isOpen ? '0 20px 15px 20px' : '0 20px',
+        }}
+      >
+        <div style={{ paddingTop: '15px' }}>{children}</div>
+      </div>
+    </div>
+  );
+};
 
 const Accordion = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -9,181 +73,64 @@ const Accordion = () => {
   };
 
   return (
-    <div style={{ position: 'relative', width: '100%' }}>
-      <img src="/Sustainability.png" alt="Background" style={{ width: '100%', height: 'auto' }} />
-      <div
-        style={{
-          position: 'absolute',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          width: '80%',
-          maxWidth: '600px',
-        }}
-      >
-        <div style={{ padding: '10px 0' }}>
-          <div
-            onClick={() => toggleItem(0)}
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              cursor: 'pointer',
-              backgroundColor: 'rgba(17, 17, 17, 0.35)',
-              padding: '15px 20px',
-              borderRadius: openIndex === 0 ? '25px 25px 0 0' : '25px',
-              color: '#fff',
-              fontWeight: 'bold',
-              backdropFilter: 'blur(10px)',
-            }}
-          >
-            <span>OUR FOCUS ON SUSTAINABILITY</span>
-            <img
-              src={openIndex === 0 ? '/Vector (2).svg' : '/Vector (1).svg'}
-              alt={openIndex === 0 ? 'Close' : 'Open'}
-            />
-          </div>
-          <div
-            style={{
-              maxHeight: openIndex === 0 ? '500px' : '0px',
-              transform: openIndex === 0 ? 'scaleY(1)' : 'scaleY(0)',
-              transformOrigin: 'top',
-              overflow: 'hidden',
-              backgroundColor: 'rgba(17, 17, 17, 0.35)',
-              borderRadius: '0 0 25px 25px',
-              color: '#fff',
-              backdropFilter: 'blur(10px)',
-              transition: 'max-height 0.4s ease-out, transform 0.4s ease-out',
-            }}
-          >
-            <div style={{ padding: openIndex === 0 ? '15px 20px' : '0 20px' }}>
-              At Rush, we care deeply about our planet and its inhabitants and we believe it is everyone’s responsibility to do what they can to help them survive, heal and thrive. That is why we take every step we can to do just that. We use the latest in sustainable technology, materials and supplies as well as taking part in HP’s Planet Partners recycling program to ensure we are being as friendly to our planet as possible while operating.
-            </div>
-          </div>
-        </div>
+    <div
+      style={{
+        width: '100%',
+        minHeight: '100vh',
+        backgroundImage: 'url(/Sustainability.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        padding: '60px 20px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'start',
+      }}
+    >
+      <div style={{ width: '100%', maxWidth: '600px', position: 'relative', top: '200px' }}>
+        <AccordionItem
+          index={0}
+          title="OUR FOCUS ON SUSTAINABILITY"
+          openIndex={openIndex}
+          toggleItem={toggleItem}
+        >
+        At Rush, we care deeply about our planet and its inhabitants and we believe it is everyone’s responsibility to do what they can to help them survive, heal and thrive. 
 
-        <div style={{ padding: '10px 0' }}>
-          <div
-            onClick={() => toggleItem(1)}
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              cursor: 'pointer',
-              backgroundColor: 'rgba(17, 17, 17, 0.35)',
-              padding: '15px 20px',
-              borderRadius: openIndex === 1 ? '25px 25px 0 0' : '25px',
-              color: '#fff',
-              fontWeight: 'bold',
-              backdropFilter: 'blur(10px)',
-            }}
-          >
-            <span>OUR FOCUS ON SUSTAINABILITY</span>
-            <img
-              src={openIndex === 1 ? '/Vector (2).svg' : '/Vector (1).svg'}
-              alt={openIndex === 1 ? 'Close' : 'Open'}
-            />
-          </div>
-          <div
-            style={{
-              maxHeight: openIndex === 1 ? '500px' : '0px',
-              transform: openIndex === 1 ? 'scaleY(1)' : 'scaleY(0)',
-              transformOrigin: 'top',
-              overflow: 'hidden',
-              backgroundColor: 'rgba(17, 17, 17, 0.35)',
-              borderRadius: '0 0 25px 25px',
-              color: '#fff',
-              backdropFilter: 'blur(10px)',
-              transition: 'max-height 0.4s ease-out, transform 0.4s ease-out',
-            }}
-          >
-            <div style={{ padding: openIndex === 1 ? '15px 20px' : '0 20px' }}>
-              At Rush, we care deeply about our planet and its inhabitants and we believe it is everyone’s responsibility to do what they can to help them survive, heal and thrive. That is why we take every step we can to do just that. We use the latest in sustainable technology, materials and supplies as well as taking part in HP’s Planet Partners recycling program to ensure we are being as friendly to our planet as possible while operating.
-            </div>
-          </div>
-        </div>
+That is why we take every step we can to do just that. We use the latest in sustainable technology, materials and supplies as well as taking part in HP’s Planet Partners recycling program to ensure we are being as friendly to our planet as possible while operating.
+        </AccordionItem>
 
-        <div style={{ padding: '10px 0' }}>
-          <div
-            onClick={() => toggleItem(2)}
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              cursor: 'pointer',
-              backgroundColor: 'rgba(17, 17, 17, 0.35)',
-              padding: '15px 20px',
-              borderRadius: openIndex === 2 ? '25px 25px 0 0' : '25px',
-              color: '#fff',
-              fontWeight: 'bold',
-              backdropFilter: 'blur(10px)',
-            }}
-          >
-            <span>OUR FOCUS ON SUSTAINABILITY</span>
-            <img
-              src={openIndex === 2 ? '/Vector (2).svg' : '/Vector (1).svg'}
-              alt={openIndex === 2 ? 'Close' : 'Open'}
-            />
-          </div>
-          <div
-            style={{
-              maxHeight: openIndex === 2 ? '500px' : '0px',
-              transform: openIndex === 2 ? 'scaleY(1)' : 'scaleY(0)',
-              transformOrigin: 'top',
-              overflow: 'hidden',
-              backgroundColor: 'rgba(17, 17, 17, 0.35)',
-              borderRadius: '0 0 25px 25px',
-              color: '#fff',
-              backdropFilter: 'blur(10px)',
-              transition: 'max-height 0.4s ease-out, transform 0.4s ease-out',
-            }}
-          >
-            <div style={{ padding: openIndex === 2 ? '15px 20px' : '0 20px' }}>
-              At Rush, we care deeply about our planet and its inhabitants and we believe it is everyone’s responsibility to do what they can to help them survive, heal and thrive. That is why we take every step we can to do just that. We use the latest in sustainable technology, materials and supplies as well as taking part in HP’s Planet Partners recycling program to ensure we are being as friendly to our planet as possible while operating.
-            </div>
-          </div>
-        </div>
+        <AccordionItem
+          index={1}
+          title="OUR TECHNOLOGY & MATERIALS"
+          openIndex={openIndex}
+          toggleItem={toggleItem}
+        >
+      At Rush, we care deeply about our planet and its inhabitants and we believe it is everyone’s responsibility to do what they can to help them survive, heal and thrive. 
 
-        <div style={{ padding: '10px 0' }}>
-          <div
-            onClick={() => toggleItem(3)}
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              cursor: 'pointer',
-              backgroundColor: 'rgba(17, 17, 17, 0.35)',
-              padding: '15px 20px',
-              borderRadius: openIndex === 3 ? '25px 25px 0 0' : '25px',
-              color: '#fff',
-              fontWeight: 'bold',
-              backdropFilter: 'blur(10px)',
-            }}
-          >
-            <span>OUR FOCUS ON SUSTAINABILITY</span>
-            <img
-              src={openIndex === 3 ? '/Vector (2).svg' : '/Vector (1).svg'}
-              alt={openIndex === 3 ? 'Close' : 'Open'}
-            />
-          </div>
-          <div
-            style={{
-              maxHeight: openIndex === 3 ? '500px' : '0px',
-              transform: openIndex === 3 ? 'scaleY(1)' : 'scaleY(0)',
-              transformOrigin: 'top',
-              overflow: 'hidden',
-              backgroundColor: 'rgba(17, 17, 17, 0.35)',
-              borderRadius: '0 0 25px 25px',
-              color: '#fff',
-              backdropFilter: 'blur(10px)',
-              transition: 'max-height 0.4s ease-out, transform 0.4s ease-out',
-            }}
-          >
-            <div style={{ padding: openIndex === 3 ? '15px 20px' : '0 20px' }}>
-              At Rush, we care deeply about our planet and its inhabitants and we believe it is everyone’s responsibility to do what they can to help them survive, heal and thrive. That is why we take every step we can to do just that. We use the latest in sustainable technology, materials and supplies as well as taking part in HP’s Planet Partners recycling program to ensure we are being as friendly to our planet as possible while operating.
-            </div>
-          </div>
-        </div>
+That is why we take every step we can to do just that. We use the latest in sustainable technology, materials and supplies as well as taking part in HP’s Planet Partners recycling program to ensure we are being as friendly to our planet as possible while operating.
+        </AccordionItem>
+
+        <AccordionItem
+          index={2}
+          title="OUR FOCUS ON SUSTAINABILITY"
+          openIndex={openIndex}
+          toggleItem={toggleItem}
+        >
+    At Rush, we care deeply about our planet and its inhabitants and we believe it is everyone’s responsibility to do what they can to help them survive, heal and thrive. 
+
+That is why we take every step we can to do just that. We use the latest in sustainable technology, materials and supplies as well as taking part in HP’s Planet Partners recycling program to ensure we are being as friendly to our planet as possible while operating.
+        </AccordionItem>
+
+        <AccordionItem
+          index={3}
+          title="OUR COMMITMENT TO THE PLANET"
+          openIndex={openIndex}
+          toggleItem={toggleItem}
+        >
+At Rush, we care deeply about our planet and its inhabitants and we believe it is everyone’s responsibility to do what they can to help them survive, heal and thrive. 
+
+That is why we take every step we can to do just that. We use the latest in sustainable technology, materials and supplies as well as taking part in HP’s Planet Partners recycling program to ensure we are being as friendly to our planet as possible while operating.
+        </AccordionItem>
       </div>
     </div>
   );
