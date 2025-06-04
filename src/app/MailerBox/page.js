@@ -3,7 +3,11 @@ import '../globals.css';
 import Header from '../Header';
 import React, { useState } from 'react';
 import UploadModal from './UploadModal';
-
+import PageTwoSectionOne from './pageTwoSectionOne';
+import PageTwoSectionTwo from './PageTwoSectionTwo';
+import PageTwoSectionThree from './PageTwoSectionThree';
+import PageTwoSectionFour from './PageTwoSectionFour';
+import Footer from '../Footer';
 const Pagetwo = () => {
 const [isModalOpen, setIsModalOpen] = useState(false);
 const handleOpenModal = () => {
@@ -16,7 +20,8 @@ const handleCloseModal = () => {
   <Header/>
   <div style={{
     width:"100%",
-    height:"100%"
+    height:"100%",
+    paddingBottom:"150px"
 
   }}>
     <div style={{
@@ -43,7 +48,8 @@ const handleCloseModal = () => {
         width: '1116px',
 height:"400px",
 position:"relative",
-        zIndex:"10"
+        zIndex:"10",
+           boxShadow: '0px 4px 50px 10px rgba(0, 0, 0, 0.05)'
       }} className='head-sectionone-pagetwo'>
         <h3 style={{
           fontSize: '24px',
@@ -62,7 +68,7 @@ position:"relative",
           display: 'flex',
 
           alignItems: 'flex-start',
-      
+       
         }}>
           <div style={{
             flex: '1 1 65%',
@@ -462,7 +468,13 @@ fontFamily: " 'Raleway',sans-serif",
     }}>Download the die-line for this box</button></div>
   </div>
     </div>
+
     <UploadModal isOpen={isModalOpen} onClose={handleCloseModal}/>
+    <PageTwoSectionOne/>
+    <PageTwoSectionTwo />
+    <PageTwoSectionThree />
+    <PageTwoSectionFour/>
+    <Footer/>
     <style>
       {`
      body, html{
@@ -471,7 +483,7 @@ height: 100%;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-   background-color: #f3f4f6;
+    
 }
 
  

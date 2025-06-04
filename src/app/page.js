@@ -24,7 +24,7 @@ export default function Home() {
             <h4>Select a packaging style, quantity, and choose from custom or stock sizes – then start <br />designing your custom boxes. Add customization options like images, text, and any
               <br />color your brand requires. As you design you'll see an instant quote so you know exactly <br />what your final order will come to.
             </h4>
-            <Link href='/pages'>
+            <Link href='/MailerBox'>
             <span><button >ORDER</button></span></Link>
           </div>
 
