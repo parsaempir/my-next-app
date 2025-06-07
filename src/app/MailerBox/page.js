@@ -30,7 +30,7 @@ const handleCloseModal = () => {
             width: '1116px',
             height:"auto",
         
-   padding:"100px 0 0 70px",
+   padding:"0px 0 0 70px",
 
 
 
@@ -421,7 +421,7 @@ justifyContent:"center"
           color: '#707070',
           marginTop: '2.5rem',
           fontFamily: " 'Raleway',sans-serif",
-          fontWeight:"600",
+          fontWeight:"400",
   
         }}>
           Remember to use one of our pre-made die-line templates! All downloads can be found here.
@@ -429,21 +429,25 @@ justifyContent:"center"
       </div>
     </div>
     <div style={{
-position:"relative"
+position:"relative",
+width:"100%",
 
-    }}><img src='Screenshot 2025-03-25 at 4.44.15 PM 1 (2).png' height="1200px" className='box-img-pagetwo'  style={{
+    }}><img src='IMAGE 2025-06-07 03:42:21.jpg'  height="800px" className='box-img-pagetwo'  style={{
       position:"absolute",
-   right:"-17%", transform: 'translate(-50%, -65%)',
+   right:"-30%", transform: 'translate(-50%, -65%)',
       zIndex:"0",
+    
 
     }}
     /></div>
     <div className='text-secondary' style={{
-         padding:"50px 0 0 70px",
+         padding:"20px 0 0 70px",
        fontFamily: " 'Raleway',sans-serif",
-        fontWeight:"600",
+        fontWeight:"400",
         fontSize:"18px",
-        color:"#707070"
+        color:"#707070",
+        zIndex:"10",
+position:"relative"
     }} >
       <p>22 Reviews Go for a stylish and sturdy custom mailer box designed to ship directly in the mail. Choose between<br/> black ink or colored printing to suit your brand. Perfect  for retail-ready gift boxes, subscription boxes, and e-<br/>commerce packaging. Need something different? You can check out our customizable<span style={{
         textDecoration:"underline"}}> Shipping<br/> Boxes </span>and <span style={{ textDecoration:"underline"}}>Product Boxes </span>for your different packaging needs!</p>
@@ -452,20 +456,22 @@ position:"relative"
          padding:"0 0 0 70px",
 display:"flex",
 alignItems:"center",
-gap:"5rem"
+gap:"5rem",
+zIndex:"10",
 
-    }}><img src='Frame 142343482.png' /> 
+    }}><img src='Frame 142343482.png' height="120px" /> 
     <div>  <button style={{
 background:"#604BA0",
 color:"#FFFFFF",
 border:"none",
 borderRadius:"100px",
-fontSize:"32px",
+fontSize:"25px",
 fontFamily: " 'Raleway',sans-serif",
         fontWeight:"600",
-        width:"627px",
-        height:"80px",
-        
+        width:"500px",
+        height:"60px",
+        zIndex:"10",
+    
 
     }}>Download the die-line for this box</button></div>
   </div>
@@ -494,9 +500,9 @@ height: 100%;
   
      
       .box-img-pagetwo {
-    left: 80%;           
+    left: 90%;           
 
-    height: 800px;        
+    height: 600px;        
   }
         
     }
@@ -507,11 +513,18 @@ height: 100%;
    {  transform: scaleX(0.9); 
 }
         .box-img-pagetwo {
-    left: 82.5%;           
+    left: 93%;           
 
     
   }
    }
+                  button {
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scaleX(0.96); 
+}
       `}
     </style>
     </>
