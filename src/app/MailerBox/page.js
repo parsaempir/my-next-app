@@ -20,8 +20,7 @@ const handleCloseModal = () => {
   <Header/>
   <div style={{
     width:"100%",
-    height:"100%",
-    paddingBottom:"150px",
+  paddingBottom:"70px",
     maxWidth:"2000px",
     margin:"auto"
 
