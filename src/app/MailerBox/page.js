@@ -399,14 +399,16 @@ justifyContent:"center"
 <button onClick={handleOpenModal} style={{
               backgroundColor: '#604BA0',
               color: '#FFFFFF',
-              fontWeight: 'bold',
+              fontWeight: '600',
               borderRadius: '100px',
               outline: 'none',
               border: 'none',
               cursor: 'pointer',
-         
+         fontSize:"16px",
               width: '293px',
-            height:"44px"
+            height:"44px",
+            fontFamily: " 'Raleway',sans-serif",
+
             }}>
               Upload
             </button>
@@ -431,9 +433,9 @@ justifyContent:"center"
 position:"relative",
 width:"100%",
 
-    }}><img src='IMAGE 2025-06-07 03:42:21.jpg'  height="800px" className='box-img-pagetwo'  style={{
+    }}><img src='IMAGE 2025-06-07 03:42:21.jpg'  height="900px" className='box-img-pagetwo'  style={{
       position:"absolute",
-   right:"-30%", transform: 'translate(-50%, -65%)',
+   right:"-37%", transform: 'translate(-50%, -65%)',
       zIndex:"0",
     
 

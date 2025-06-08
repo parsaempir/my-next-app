@@ -251,9 +251,10 @@ top:-450px;
   background-color: #111111;
   color: white;
   font-family: 'Secular One', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   border: none;
   cursor: pointer;
+  font-size:16px;
 }
 
 .section-one{
@@ -434,7 +435,7 @@ bottom: 10%;
 .order-btn {
   background-color: white;
   color: black;
-  font-size: 32px;
+  font-size: 16px;
   font-weight: 600;
   padding: 12px 160px;
   border: none;
