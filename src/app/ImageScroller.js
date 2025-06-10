@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import './globals.css';
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -72,7 +73,11 @@ export default function ProductSlider() {
           <div ref={trackRef} className="slider-track">
 
             <div className="text-div"><h3>Take your pick<br />from the following <br />box styles!</h3></div>
+            <Link href='/MailerBox' style={{
 
+textDecoration:"none",
+color:"#111111"
+    }}>
             <div className="slider-item">
               <div className='in-slider'>
                 <h3> MAILER <span>BOX</span></h3>
@@ -84,7 +89,12 @@ export default function ProductSlider() {
                 </div>
               </div>
             </div>
+            </Link>
+            <Link href='/ShipperBox' style={{
 
+textDecoration:"none",
+color:"#111111"
+    }}>
             <div className="slider-item1">
               <div className='in-slider'>
                 <h3> SHIPPER <span>BOX</span></h3>
@@ -95,7 +105,7 @@ export default function ProductSlider() {
                 </div>
               </div>
             </div>
-
+            </Link>
             <div className="slider-item">
               <div className='in-slider'>
                 <h3>FOLDED <span>BOX</span></h3>

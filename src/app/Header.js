@@ -1,6 +1,7 @@
 'use client';
 import { useState, useRef } from "react";
 import './globals.css';
+import Link from "next/link";
 
 function Header() {
     let [divShow, setDivShow] = useState(false);
@@ -58,13 +59,17 @@ function Header() {
                         <img src="/logo.svg" alt="Logo" />
                     </span>
                     <span className="head-nav-center">
-                      
+                    <Link href='/' style={{
+
+                textDecoration:"none",
+                color:"#111111"
+                    }}>
                         <span
                             onMouseEnter={() => handleMouseEnter(setDivShow, timeoutRef)}
                             onMouseLeave={() => handleMouseLeave(setDivShow, timeoutRef)}
                         >
                             Mailer <img src="Expand_right_light.svg" className={divShow ? 'rotated' : ''} alt="Expand Icon" />
-                        </span>
+                        </span></Link>
                         <div
                             className={`hover-box-show ${divShow ? "show" : ""}`}
                             onMouseEnter={() => handleMouseEnter(setDivShow, timeoutRef)}

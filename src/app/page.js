@@ -1,12 +1,20 @@
-"use clinet"
+'use client';
+import React, { useRef } from 'react';
 import VideoReveal from "./VideoReveal";
 import HowItWorks from "./ScrollHighlight";
 import ImageScroller from "./ImageScroller";
 import Footer from './Footer';
 import Header from "./Header";
-import Link from "next/link";
 export default function Home() {
-
+  const sectionRef = useRef(null);
+const scrollToSection = () =>{
+if(sectionRef.current){
+  sectionRef.current.scrollIntoView({
+    behavior: 'smooth',
+           block: 'end'
+  })
+}
+};
   return (
     <>
       <Header />
@@ -24,8 +32,8 @@ export default function Home() {
             <h4>Select a packaging style, quantity, and choose from custom or stock sizes – then start <br />designing your custom boxes. Add customization options like images, text, and any
               <br />color your brand requires. As you design you'll see an instant quote so you know exactly <br />what your final order will come to.
             </h4>
-            <Link href='/MailerBox'>
-            <span><button >ORDER</button></span></Link>
+       
+            <span><button onClick={scrollToSection}>ORDER</button></span>
           </div>
 
         </div>
@@ -65,7 +73,7 @@ export default function Home() {
             </div> */}
 
 
-          <div className="gallery">
+          <div className="gallery" ref={sectionRef}>
             <div className="box">
               <img src="Credit.png" alt="Cardboard Box" />
               <div className="box-label">Cardboard <span>Box</span></div>
@@ -149,7 +157,7 @@ export default function Home() {
       <div className="image">
         <img src="/What we do Section.png" className="img" />
         <div className="head-order">
-          <button className="order-btn">ORDER</button>
+          <button className="order-btn">Contact Us</button>
         </div>
       </div>
 

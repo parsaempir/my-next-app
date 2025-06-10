@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import '../globals.css';
 import Header from '../Header';
 import React, { useState } from 'react';
@@ -16,6 +16,7 @@ const handleOpenModal = () => {
 const handleCloseModal = () => {
   setIsModalOpen(false);
 };
+
   return (<>
   <Header/>
   <div style={{
@@ -433,7 +434,25 @@ justifyContent:"center"
 position:"relative",
 width:"100%",
 
-    }}><img src='IMAGE 2025-06-07 03:42:21.jpg'  height="900px" className='box-img-pagetwo'  style={{
+    }}>
+      <img src='10569485 3.png'  height="300px" className='box-imgone-pagetwo'  style={{
+      position:"absolute",
+      top:"-250px",
+   right:"13%", transform: 'translate(-50%, -100%)',
+      zIndex:"10",
+    
+
+    }}
+    />
+    <img src='10569485 4.png'  height="300px" className='box-imgtwo-pagetwo'  style={{
+      position:"absolute",
+      top:"-280px",
+   right:"10.5%", transform: 'translate(-50%, -100%)',
+      zIndex:"10",
+    transform:"rotate(35deg)"
+    }}
+    />
+      <img src='IMAGE 2025-06-07 03:42:21.jpg'  height="900px" className='box-img-pagetwo'  style={{
       position:"absolute",
    right:"-37%", transform: 'translate(-50%, -65%)',
       zIndex:"0",
@@ -472,7 +491,7 @@ fontFamily: " 'Raleway',sans-serif",
         width:"500px",
         height:"60px",
         zIndex:"10",
-    
+    cursor:"pointer"
 
     }}>Download the die-line for this box</button></div>
   </div>
@@ -505,7 +524,19 @@ height: 100%;
 
     height: 600px;        
   }
-        
+       .box-imgone-pagetwo {
+           height: 200px;        
+left:85%;
+top:-100px;
+    transform: translate(-50%, -65%) !important;
+}
+       .box-imgtwo-pagetwo{
+        height: 200px;  
+        left:90%;
+    transform: translate(-50%, 50%) rotate(35deg) !important;
+      
+
+       }
     }
    @media (max-width:1600px) {
    .head-sectionone-pagetwo,
@@ -518,6 +549,13 @@ height: 100%;
 
     
   }
+    .box-imgone-pagetwo{
+    left:88%;
+    }
+    .box-imgtwo-pagetwo{
+        left:93%;
+
+    }
    }
                   button {
   transition: transform 0.2s ease;

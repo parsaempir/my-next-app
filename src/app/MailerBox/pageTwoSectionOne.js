@@ -31,8 +31,11 @@ fontWeight:"400",
 <div style={{
 display:"grid",
 gridTemplateColumns:"1fr 1fr",
+width:"100%",
+  maxWidth:"1930px",
+  margin:"auto",
 justifyContent:"center",
-padding:"70px 0 0 100px",
+padding:"70px 0 0 70px",
 fontFamily: " 'Secular One',sans-serif",
 fontWeight:"400",
 }}>
