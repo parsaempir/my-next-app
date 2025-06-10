@@ -291,7 +291,12 @@ display: flex;
 
 
 
+/*@media (max-width:1800px){
+.gallery{
+    grid-template-rows: 300px 50px 200px 300px;
 
+}
+}*/
 
 .gallery {
 
@@ -303,9 +308,9 @@ display: flex;
       "shipper folded corrugated corrugated "
       "shipper gift setup  setup";
     grid-template-columns: 1fr 0.9fr 0.3fr 1fr;
-    grid-template-rows: 300px 50px 200px 300px;
+    grid-template-rows: 200px 50px 200px 200px;
     gap: 25px;
-
+padding:0 50px 0 50px;
   }
 
 
