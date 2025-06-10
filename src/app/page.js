@@ -1,5 +1,6 @@
 'use client';
 import React, { useRef } from 'react';
+import Link from "next/link";
 import VideoReveal from "./VideoReveal";
 import HowItWorks from "./ScrollHighlight";
 import ImageScroller from "./ImageScroller";
@@ -78,12 +79,13 @@ if(sectionRef.current){
               <img src="Credit.png" alt="Cardboard Box" />
               <div className="box-label">Cardboard <span>Box</span></div>
             </div>
-
+    
             <div className="box">
+       <Link href='/MailerBox'>
               <img src="Design your box.png" alt="Mailer Box" />
-              <div className="box-label-one">Mailer <span>Box</span></div>
+              <div className="box-label-one">Mailer <span>Box</span></div></Link>
             </div>
-
+         
             <div className="box">
               <img src="Custom Box.png" alt="Custom Box" />
               <div className="box-label-three">Custom <span>Box</span></div>
@@ -267,8 +269,8 @@ top:-450px;
 
 .section-one{
     background-color: #111111;
-    padding-top: 150px;
-    padding-bottom: 30px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 
@@ -300,7 +302,6 @@ display: flex;
 
 .gallery {
 
-    margin: 50px auto;
     display: grid;
     grid-template-areas:
       "cardboard mailer mailer  custom"
@@ -310,7 +311,7 @@ display: flex;
     grid-template-columns: 1fr 0.9fr 0.3fr 1fr;
     grid-template-rows: 200px 50px 200px 200px;
     gap: 25px;
-padding:0 50px 0 50px;
+padding:0 50px 0px 50px;
   }
 
 
