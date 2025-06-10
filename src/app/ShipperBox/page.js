@@ -3,10 +3,10 @@ import '../globals.css';
 import Header from '../Header';
 import React, { useState } from 'react';
 import UploadModal from './UploadModal';
-import PageTwoSectionOne from './pageThreeSectionOne';
-import PageTwoSectionTwo from './PageThreeSectionTwo';
-import PageTwoSectionThree from './PageThreeSectionThree';
-import PageTwoSectionFour from './PageThreeSectionFour';
+import PageTwoSectionOne from './SectionOne';
+import PageTwoSectionTwo from './SectionTwo';
+import PageTwoSectionThree from './SectionThree';
+import PageTwoSectionFour from './SectionFour';
 import Footer from '../Footer';
 const Pagetwo = () => {
 const [isModalOpen, setIsModalOpen] = useState(false);

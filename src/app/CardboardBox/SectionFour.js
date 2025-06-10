@@ -1,7 +1,6 @@
 'use client';
 
 import { useRef, useState, useEffect } from 'react';
-
 const AccordionItem = ({ index, title, children, openIndex, toggleItem }) => {
   const contentRef = useRef(null);
   const isOpen = openIndex === index;
@@ -87,16 +86,25 @@ const Accordion = () => {
         alignItems: 'start',
       }}
     >
-      <div style={{ width: '100%', maxWidth: '600px', position: 'relative', top: '200px' }}>
+      <div style={{ width: '100%', maxWidth: '600px', position: 'relative', top: '200px',
+      fontFamily:" 'Secular One',sans-serif",
+fontWeight:"400"
+
+       }}>
         <AccordionItem
           index={0}
           title="OUR FOCUS ON SUSTAINABILITY"
           openIndex={openIndex}
           toggleItem={toggleItem}
         >
-        At Rush, we care deeply about our planet and its inhabitants and we believe it is everyone’s responsibility to do what they can to help them survive, heal and thrive. 
+        <p style={{
+      fontFamily:" 'Raleway',sans-serif",
+      fontWeight:"200"
 
-That is why we take every step we can to do just that. We use the latest in sustainable technology, materials and supplies as well as taking part in HP’s Planet Partners recycling program to ensure we are being as friendly to our planet as possible while operating.
+
+        }}>At Rush, we care deeply about our planet and its inhabitants and we believe it is everyone’s responsibility to do what they can to help them survive, heal and thrive. 
+
+That is why we take every step we can to do just that. We use the latest in sustainable technology, materials and supplies as well as taking part in HP’s Planet Partners recycling program to ensure we are being as friendly to our planet as possible while operating.</p> 
         </AccordionItem>
 
         <AccordionItem
@@ -104,10 +112,16 @@ That is why we take every step we can to do just that. We use the latest in sust
           title="OUR TECHNOLOGY & MATERIALS"
           openIndex={openIndex}
           toggleItem={toggleItem}
+     
         >
-      At Rush, we care deeply about our planet and its inhabitants and we believe it is everyone’s responsibility to do what they can to help them survive, heal and thrive. 
+     <p style={{
+      fontFamily:" 'Raleway',sans-serif",
+      fontWeight:"200"
 
-That is why we take every step we can to do just that. We use the latest in sustainable technology, materials and supplies as well as taking part in HP’s Planet Partners recycling program to ensure we are being as friendly to our planet as possible while operating.
+
+        }}>At Rush, we care deeply about our planet and its inhabitants and we believe it is everyone’s responsibility to do what they can to help them survive, heal and thrive. 
+
+That is why we take every step we can to do just that. We use the latest in sustainable technology, materials and supplies as well as taking part in HP’s Planet Partners recycling program to ensure we are being as friendly to our planet as possible while operating.</p> 
         </AccordionItem>
 
         <AccordionItem
@@ -116,9 +130,14 @@ That is why we take every step we can to do just that. We use the latest in sust
           openIndex={openIndex}
           toggleItem={toggleItem}
         >
-    At Rush, we care deeply about our planet and its inhabitants and we believe it is everyone’s responsibility to do what they can to help them survive, heal and thrive. 
+     <p style={{
+      fontFamily:" 'Raleway',sans-serif",
+      fontWeight:"200"
 
-That is why we take every step we can to do just that. We use the latest in sustainable technology, materials and supplies as well as taking part in HP’s Planet Partners recycling program to ensure we are being as friendly to our planet as possible while operating.
+
+        }}>At Rush, we care deeply about our planet and its inhabitants and we believe it is everyone’s responsibility to do what they can to help them survive, heal and thrive. 
+
+That is why we take every step we can to do just that. We use the latest in sustainable technology, materials and supplies as well as taking part in HP’s Planet Partners recycling program to ensure we are being as friendly to our planet as possible while operating.</p> 
         </AccordionItem>
 
         <AccordionItem
@@ -127,9 +146,14 @@ That is why we take every step we can to do just that. We use the latest in sust
           openIndex={openIndex}
           toggleItem={toggleItem}
         >
-At Rush, we care deeply about our planet and its inhabitants and we believe it is everyone’s responsibility to do what they can to help them survive, heal and thrive. 
+ <p style={{
+      fontFamily:" 'Raleway',sans-serif",
+      fontWeight:"200"
 
-That is why we take every step we can to do just that. We use the latest in sustainable technology, materials and supplies as well as taking part in HP’s Planet Partners recycling program to ensure we are being as friendly to our planet as possible while operating.
+
+        }}>At Rush, we care deeply about our planet and its inhabitants and we believe it is everyone’s responsibility to do what they can to help them survive, heal and thrive. 
+
+That is why we take every step we can to do just that. We use the latest in sustainable technology, materials and supplies as well as taking part in HP’s Planet Partners recycling program to ensure we are being as friendly to our planet as possible while operating.</p> 
         </AccordionItem>
       </div>
     </div>

@@ -73,11 +73,7 @@ export default function ProductSlider() {
           <div ref={trackRef} className="slider-track">
 
             <div className="text-div"><h3>Take your pick<br />from the following <br />box styles!</h3></div>
-            <Link href='/MailerBox' style={{
-
-textDecoration:"none",
-color:"#111111"
-    }}>
+            <Link href='/MailerBox' >
             <div className="slider-item">
               <div className='in-slider'>
                 <h3> MAILER <span>BOX</span></h3>
@@ -90,11 +86,7 @@ color:"#111111"
               </div>
             </div>
             </Link>
-            <Link href='/ShipperBox' style={{
-
-textDecoration:"none",
-color:"#111111"
-    }}>
+            <Link href='/ShipperBox' >
             <div className="slider-item1">
               <div className='in-slider'>
                 <h3> SHIPPER <span>BOX</span></h3>
@@ -106,6 +98,7 @@ color:"#111111"
               </div>
             </div>
             </Link>
+            <Link href='/FoldedBox' >  
             <div className="slider-item">
               <div className='in-slider'>
                 <h3>FOLDED <span>BOX</span></h3>
@@ -116,7 +109,8 @@ color:"#111111"
                 </div>
               </div>
             </div>
-
+            </Link>
+            <Link href='/CourogatedBox' > 
             <div className="slider-item1">
               <div className='in-slider'>
                 <h3> COUROGATED <span>BOX</span></h3>
@@ -127,7 +121,8 @@ color:"#111111"
                 </div>
               </div>
             </div>
-
+            </Link>
+            <Link href='/CardboardBox' >  
             <div className="slider-item">
               <div className='in-slider'>
                 <h3>  CARDBOARD <span>BOX</span></h3>
@@ -138,7 +133,8 @@ color:"#111111"
                 </div>
               </div>
             </div>
-
+            </Link>
+            <Link href='/GiftBox' > 
             <div className="slider-item1">
               <div className='in-slider'>
                 <h3>GIFT  <span>BOX</span></h3>
@@ -149,7 +145,8 @@ color:"#111111"
                 </div>
               </div>
             </div>
-
+            </Link>
+            <Link href='/CustomBox' > 
             <div className="slider-item">
               <div className='in-slider'>
                 <h3> CUSTOM <span>BOX</span></h3>
@@ -160,7 +157,8 @@ color:"#111111"
                 </div>
               </div>
             </div>
-
+            </Link>
+            <Link href='/SetupBox' >  
             <div className="slider-item1">
               <div className='in-slider'>
                 <h3>  SETUP <span>BOX</span></h3>
@@ -170,9 +168,9 @@ color:"#111111"
                   <img className='photo-twentythree' src='/20.png' />
                 </div>
               </div>
- 
+          
             </div>
-
+            </Link>
             <div style={{
 width:"800px",
 height: "auto",

@@ -1,7 +1,7 @@
 'use client';
 import { useState, useRef } from "react";
 import './globals.css';
-import Link from "next/link";
+import Link from "next/link"; 
 
 function Header() {
     let [divShow, setDivShow] = useState(false);
@@ -12,25 +12,23 @@ function Header() {
     const [hoveredIndexProduct, setHoveredIndexProduct] = useState(null);
     const [hoveredIndexRigged, setHoveredIndexRigged] = useState(null);
 
-
     const timeoutRef = useRef(null);
     const timeoutRefOne = useRef(null);
     const timeoutRefTwo = useRef(null);
 
- 
     const mailerImages = [
-        { src: "/Mailer Box.png", text: "Mailer Box", itemWidth: "500px", itemHeight: "auto" },
-        { src: "/Shipper Box.png", text: "Shipper Box", itemWidth: "500px", itemHeight: "auto" },
-        { src: "/Foldwd Box.png", text: "Folded Box", itemWidth: "500px", itemHeight: "auto" }
+        { src: "/Mailer Box.png", text: "Mailer Box", itemWidth: "500px", itemHeight: "auto", href: "/MailerBox" }, 
+        { src: "/Shipper Box.png", text: "Shipper Box", itemWidth: "500px", itemHeight: "auto", href: "/ShipperBox" }, 
+        { src: "/Foldwd Box.png", text: "Folded Box", itemWidth: "500px", itemHeight: "auto", href: "/FoldedBox" } 
     ];
     const productImages = [
-        { src: "/10.png", text: "Cardboard Box", itemWidth: "600px", itemHeight: "auto" },
-        { src: "/7.png", text: "Corrugated Box", itemWidth: "500px", itemHeight: "auto" }
+        { src: "/10.png", text: "Cardboard Box", itemWidth: "600px", itemHeight: "auto", href: "/CardboardBox" }, 
+        { src: "/7.png", text: "Corrugated Box", itemWidth: "500px", itemHeight: "auto", href: "/CourogatedBox" } 
     ];
     const riggedImages = [
-        { src: "/13.png", text: "Gift Box", itemWidth: "500px", itemHeight: "auto" },
-        { src: "/20.png", text: "Setup Box", itemWidth: "500px", itemHeight: "auto" },
-        { src: "/17.png", text: "Custom Box", itemWidth: "450px", itemHeight: "auto" }
+        { src: "/13.png", text: "Gift Box", itemWidth: "500px", itemHeight: "auto", href: "/GiftBox" },
+        { src: "/20.png", text: "Setup Box", itemWidth: "500px", itemHeight: "auto", href: "/SetupBox" }, 
+        { src: "/17.png", text: "Custom Box", itemWidth: "450px", itemHeight: "auto", href: "/CustomBox" } 
     ];
 
     const isAnyHovered = divShow || divShowOne || divShowTwo;
@@ -59,17 +57,13 @@ function Header() {
                         <img src="/logo.svg" alt="Logo" />
                     </span>
                     <span className="head-nav-center">
-                    <Link href='/' style={{
-
-                textDecoration:"none",
-                color:"#111111"
-                    }}>
+                
                         <span
                             onMouseEnter={() => handleMouseEnter(setDivShow, timeoutRef)}
                             onMouseLeave={() => handleMouseLeave(setDivShow, timeoutRef)}
                         >
                             Mailer <img src="Expand_right_light.svg" className={divShow ? 'rotated' : ''} alt="Expand Icon" />
-                        </span></Link>
+                        </span>
                         <div
                             className={`hover-box-show ${divShow ? "show" : ""}`}
                             onMouseEnter={() => handleMouseEnter(setDivShow, timeoutRef)}
@@ -77,20 +71,24 @@ function Header() {
                         >
                             <div className="image-container">
                                 {mailerImages.map((item, index) => (
-                                    <div
-                                        key={item.src}
-                                        className={`image-item-wrapper ${hoveredIndexMailer !== null && hoveredIndexMailer !== index ? 'blurred' : ''}`}
-                                        onMouseEnter={() => setHoveredIndexMailer(index)}
-                                        onMouseLeave={() => setHoveredIndexMailer(null)}
-                                    >
-                                        <p className="image-text">{item.text}</p>
-                                        <img
-                                            src={item.src}
-                                            alt={item.text}
-                                            className="image-item"
-                                            style={{ width: item.itemWidth, height: item.itemHeight }}
-                                        />
-                                    </div>
+                                    <Link style={{
+textDecoration:"none"
+
+                                    }} key={item.src} href={item.href} passHref> 
+                                        <div
+                                            className={`image-item-wrapper ${hoveredIndexMailer !== null && hoveredIndexMailer !== index ? 'blurred' : ''}`}
+                                            onMouseEnter={() => setHoveredIndexMailer(index)}
+                                            onMouseLeave={() => setHoveredIndexMailer(null)}
+                                        >
+                                            <p className="image-text">{item.text}</p>
+                                            <img
+                                                src={item.src}
+                                                alt={item.text}
+                                                className="image-item"
+                                                style={{ width: item.itemWidth, height: item.itemHeight }}
+                                            />
+                                        </div>
+                                    </Link>
                                 ))}
                             </div>
                         </div>
@@ -106,20 +104,24 @@ function Header() {
                         >
                             <div className="image-container">
                                 {productImages.map((item, index) => (
-                                    <div
-                                        key={item.src}
-                                        className={`image-item-wrapper ${hoveredIndexProduct !== null && hoveredIndexProduct !== index ? 'blurred' : ''}`}
-                                        onMouseEnter={() => setHoveredIndexProduct(index)}
-                                        onMouseLeave={() => setHoveredIndexProduct(null)}
-                                    >
-                                        <p className="image-text">{item.text}</p>
-                                        <img
-                                            src={item.src}
-                                            alt={item.text}
-                                            className="image-item"
-                                            style={{ width: item.itemWidth, height: item.itemHeight }}
-                                        />
-                                    </div>
+                                    <Link style={{
+                                        textDecoration:"none"
+                                        
+                                                                            }} key={item.src} href={item.href} passHref> 
+                                        <div
+                                            className={`image-item-wrapper ${hoveredIndexProduct !== null && hoveredIndexProduct !== index ? 'blurred' : ''}`}
+                                            onMouseEnter={() => setHoveredIndexProduct(index)}
+                                            onMouseLeave={() => setHoveredIndexProduct(null)}
+                                        >
+                                            <p className="image-text">{item.text}</p>
+                                            <img
+                                                src={item.src}
+                                                alt={item.text}
+                                                className="image-item"
+                                                style={{ width: item.itemWidth, height: item.itemHeight }}
+                                            />
+                                        </div>
+                                    </Link>
                                 ))}
                             </div>
                         </div>
@@ -136,20 +138,24 @@ function Header() {
                     >
                         <div className="image-container">
                             {riggedImages.map((item, index) => (
-                                <div
-                                    key={item.src}
-                                    className={`image-item-wrapper ${hoveredIndexRigged !== null && hoveredIndexRigged !== index ? 'blurred' : ''}`}
-                                    onMouseEnter={() => setHoveredIndexRigged(index)}
-                                    onMouseLeave={() => setHoveredIndexRigged(null)}
-                                >
-                                    <p className="image-text">{item.text}</p>
-                                    <img
-                                        src={item.src}
-                                        alt={item.text}
-                                        className="image-item"
-                                        style={{ width: item.itemWidth, height: item.itemHeight }}
-                                    />
-                                </div>
+                                <Link style={{
+                                    textDecoration:"none"
+                                    
+                                                                        }} key={item.src} href={item.href} passHref> 
+                                    <div
+                                        className={`image-item-wrapper ${hoveredIndexRigged !== null && hoveredIndexRigged !== index ? 'blurred' : ''}`}
+                                        onMouseEnter={() => setHoveredIndexRigged(index)}
+                                        onMouseLeave={() => setHoveredIndexRigged(null)}
+                                    >
+                                        <p className="image-text">{item.text}</p>
+                                        <img
+                                            src={item.src}
+                                            alt={item.text}
+                                            className="image-item"
+                                            style={{ width: item.itemWidth, height: item.itemHeight }}
+                                        />
+                                    </div>
+                                </Link>
                             ))}
                         </div>
                     </div>
@@ -341,9 +347,6 @@ opacity:0.6;
                     margin-right: auto; 
                     object-fit: contain; 
                 }
-
-
-
             `}</style>
         </>
     );

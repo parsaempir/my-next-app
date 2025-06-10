@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import '../globals.css';
 import Header from '../Header';
 import React, { useState } from 'react';
@@ -16,7 +16,6 @@ const handleOpenModal = () => {
 const handleCloseModal = () => {
   setIsModalOpen(false);
 };
-
   return (<>
   <Header/>
   <div style={{
@@ -42,15 +41,13 @@ const handleCloseModal = () => {
         fontFamily: " 'Secular One',sans-serif",
         fontWeight:"400"
 
-      }}>MAILER BOX</h1>
+      }}>SETUP BOX</h1>
       <div style={{
         backgroundColor: '#ffffff',
         padding: '20px 0px 30px 50px',
         borderRadius: '25px',
         width: '1116px',
 height:"400px",
-position:"relative",
-        zIndex:"10",
            boxShadow: '0px 4px 50px 10px rgba(0, 0, 0, 0.05)'
       }} className='head-sectionone-pagetwo'>
         <h3 style={{
@@ -337,7 +334,8 @@ position:"relative",
 
           <div style={{
             flex: '0 0 38%',
-            paddingTop:"15px"
+            paddingTop:"15px",
+      
          
           }}>
             <div style={{
@@ -391,14 +389,14 @@ left:"50px",
             </div>
 <div style={{
 display:"flex",
-justifyContent:"center"
-
-
+justifyContent:"center",
+position:"relative",
+zIndex:"100",
 }}>
 
 
 <button onClick={handleOpenModal} style={{
-              backgroundColor: '#604BA0',
+              backgroundColor: '#CC543B',
               color: '#FFFFFF',
               fontWeight: '600',
               borderRadius: '100px',
@@ -409,7 +407,7 @@ justifyContent:"center"
               width: '293px',
             height:"44px",
             fontFamily: " 'Raleway',sans-serif",
-
+zIndex:"100"
             }}>
               Upload
             </button>
@@ -435,27 +433,28 @@ position:"relative",
 width:"100%",
 
     }}>
-      <img src='10569485 3.png'  height="300px" className='box-imgone-pagetwo'  style={{
+      <img src='/3.png'  height="300px" className='box-imgone-pagetwo'  style={{
       position:"absolute",
-      top:"-250px",
-   right:"13%", transform: 'translate(-50%, -100%)',
+      top:"-260px",
+   right:"15.5%", transform: 'translate(-50%, -100%)',
       zIndex:"10",
     
 
     }}
     />
-    <img src='10569485 4.png'  height="300px" className='box-imgtwo-pagetwo'  style={{
+    <img src='/4.png'  height="370px" className='box-imgtwo-pagetwo'  style={{
       position:"absolute",
-      top:"-280px",
-   right:"10.5%", transform: 'translate(-50%, -100%)',
-      zIndex:"10",
-    transform:"rotate(35deg)"
+      top:"-120px",
+   right:"5%", transform: 'translate(-50%, -65%)',
+      zIndex:"11",
+    
+
     }}
     />
-      <img src='IMAGE 2025-06-07 03:42:21.jpg'  height="900px" className='box-img-pagetwo'  style={{
+      <img src='/custom-boxes-mailer_1 1.png'  height="620px" className='box-img-pagetwo'  style={{
       position:"absolute",
-   right:"-37%", transform: 'translate(-50%, -65%)',
-      zIndex:"0",
+   right:"-8%", transform: 'translate(-50%, -37%)',
+      zIndex:"10",
     
 
     }}
@@ -481,7 +480,7 @@ zIndex:"10",
 
     }}><img src='Frame 142343482.png' height="120px" /> 
     <div>  <button style={{
-background:"#604BA0",
+background:"#CC543B",
 color:"#FFFFFF",
 border:"none",
 borderRadius:"100px",
@@ -520,23 +519,15 @@ height: 100%;
   
      
       .box-img-pagetwo {
-    left: 90%;           
+    left: 73%;           
 
     height: 600px;        
   }
-       .box-imgone-pagetwo {
-           height: 200px;        
-left:85%;
-top:-100px;
-    transform: translate(-50%, -65%) !important;
-}
-       .box-imgtwo-pagetwo{
-        height: 200px;  
-        left:90%;
-    transform: translate(-50%, 50%) rotate(35deg) !important;
-      
-
-       }
+        .box-imgone-pagetwo{
+        left:78%;
+        }
+        .box-imgtwo-pagetwo{
+        left:85%;}
     }
    @media (max-width:1600px) {
    .head-sectionone-pagetwo,
@@ -545,16 +536,15 @@ top:-100px;
    {  transform: scaleX(0.9); 
 }
         .box-img-pagetwo {
-    left: 93%;           
+    left: 80%;           
 
     
   }
-    .box-imgone-pagetwo{
-    left:88%;
-    }
-    .box-imgtwo-pagetwo{
-        left:93%;
-
+         .box-imgone-pagetwo{
+        left:83%;
+        }
+        .box-imgtwo-pagetwo{
+        left:91%;}
     }
    }
                   button {

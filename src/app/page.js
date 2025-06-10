@@ -76,8 +76,9 @@ if(sectionRef.current){
 
           <div className="gallery" ref={sectionRef}>
             <div className="box">
+            <Link href='/CardboardBox'>
               <img src="Credit.png" alt="Cardboard Box" />
-              <div className="box-label">Cardboard <span>Box</span></div>
+              <div className="box-label">Cardboard <span>Box</span></div></Link>
             </div>
     
             <div className="box">
@@ -87,33 +88,39 @@ if(sectionRef.current){
             </div>
          
             <div className="box">
+            <Link href='/CustomBox'>
               <img src="Custom Box.png" alt="Custom Box" />
-              <div className="box-label-three">Custom <span>Box</span></div>
+              <div className="box-label-three">Custom <span>Box</span></div></Link>
             </div>
 
             <div className="box">
+            <Link href='/ShipperBox'>
               <img src="COMPANIES.png" alt="Shipper Box" />
-              <div className="box-label">Shipper <span>Box</span></div>
+              <div className="box-label">Shipper <span>Box</span></div></Link>
             </div>
 
             <div className="box">
+            <Link href='/FoldedBox'>
               <img src="AI bank.png" alt="Folded Box" />
-              <div className="box-label-two">Folded <span>Box</span></div>
+              <div className="box-label-two">Folded <span>Box</span></div></Link>
             </div>
 
             <div className="box">
+            <Link href='/CourogatedBox'>
               <img src="EASY PAY.png" alt="Corrugated Box" />
-              <div className="box-label-four">Corrugated <span>Box</span></div>
+              <div className="box-label-four">Corrugated <span>Box</span></div></Link>
             </div>
 
             <div className="box">
+            <Link href='/GiftBox'>
               <img src="Paymaent.png" alt="Gift Box" />
-              <div className="box-label">Gift <span>Box</span></div>
+              <div className="box-label">Gift <span>Box</span></div></Link>
             </div>
 
             <div className="box">
+            <Link href='/SetupBox'>
               <img src="invested.png" alt="Setup Box" />
-              <div className="box-label">Setup <span>Box</span></div>
+              <div className="box-label">Setup <span>Box</span></div></Link>
             </div>
           </div>
 

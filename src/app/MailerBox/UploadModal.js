@@ -59,11 +59,15 @@ const UploadModal = ({ isOpen, onClose }) => {
             <h3 style={{
               fontSize: "30px",
               lineHeight: "50px",
-              marginTop: "0"
+              marginTop: "0",
+                  fontFamily:" 'Secular One',sans-serif",
+      fontWeight:"400"
             }}>Step 1</h3>
             <h4 style={{
               fontSize: "24px",
-              lineHeight: "60px"
+              lineHeight: "60px",
+                  fontFamily:" 'Secular One',sans-serif",
+      fontWeight:"400"
             }}>Set up your box artwork</h4>
             <p style={{
               fontSize: "20px",
@@ -117,11 +121,15 @@ const UploadModal = ({ isOpen, onClose }) => {
             <h3 style={{
               fontSize: "30px",
               lineHeight: "50px",
-              marginTop: "0"
+              marginTop: "0",
+                  fontFamily:" 'Secular One',sans-serif",
+      fontWeight:"400"
             }}>Step 2</h3>
             <h4 style={{
               fontSize: "24px",
               marginBottom: "30px",
+                  fontFamily:" 'Secular One',sans-serif",
+      fontWeight:"400"
             }}>Upload your artwork</h4>
 
 <div style={{
@@ -150,10 +158,12 @@ const UploadModal = ({ isOpen, onClose }) => {
     />
   ) : (
     <>
-      <p style={{ color: '#000000', marginBottom: '0.5rem', fontSize: "18px", fontWeight: '300' }}>
+      <p style={{ color: '#000000', marginBottom: '0.5rem', fontSize: "18px",           fontFamily:" 'Secular One',sans-serif",
+      fontWeight:"400"}}>
         Drag and drop here to upload
       </p>
-      <p style={{ color: '#000000', marginBottom: '1rem', fontSize: "18px", fontWeight: '300' }}>
+      <p style={{ color: '#000000', marginBottom: '1rem', fontSize: "18px",           fontFamily:" 'Secular One',sans-serif",
+      fontWeight:"400" }}>
         or
       </p>
       <button
@@ -162,10 +172,11 @@ const UploadModal = ({ isOpen, onClose }) => {
           backgroundColor: 'transparent',
           border: 'none',
           color: '#000000',
-          fontWeight: '300',
           textDecoration: 'underline',
           cursor: 'pointer',
           fontSize: "18px",
+                    fontFamily:" 'Secular One',sans-serif",
+      fontWeight:"400"
         }}
       >
         Browse your files
